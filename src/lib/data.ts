@@ -1,4 +1,87 @@
+
 export const BOOKING_URL = 'https://booksy.com'
+
+// Update all fields below with real business details before launch
+export const businessInfo = {
+  address: 'Hobart CBD, TAS 7000, Australia',
+  phone: '+61 400 000 000',
+  email: 'hello@diegosbarbershop.com.au',
+  instagram: 'https://instagram.com/diegosbarbershop',
+  googleMapsUrl: 'https://maps.google.com/?q=Hobart+CBD+Tasmania+Australia',
+  mapEmbedUrl:
+    'https://maps.google.com/maps?q=Hobart+CBD+Tasmania+Australia&t=&z=15&ie=UTF8&iwloc=B&output=embed',
+}
+
+export interface OpeningHour {
+  days: string
+  hours: string
+}
+
+export const openingHours: OpeningHour[] = [
+  { days: 'Mon – Wed', hours: '9:00 AM – 6:00 PM' },
+  { days: 'Thu – Fri', hours: '9:00 AM – 7:00 PM' },
+  { days: 'Saturday',  hours: '8:00 AM – 5:00 PM' },
+  { days: 'Sunday',    hours: '10:00 AM – 4:00 PM' },
+]
+
+// Replace these with real client testimonials before launch
+export interface Review {
+  id: string
+  name: string
+  location: string
+  rating: number
+  service: string
+  text: string
+  date: string
+}
+
+export const reviews: Review[] = [
+  {
+    id: 'r1',
+    name: 'James R.',
+    location: 'Sandy Bay',
+    rating: 5,
+    service: 'Skin Fade',
+    text: 'Diego gave me the cleanest fade I have had in years. The attention to detail is next level — I drove all the way from Sandy Bay and it was absolutely worth it.',
+    date: 'April 2024',
+  },
+  {
+    id: 'r2',
+    name: 'Michael T.',
+    location: 'Hobart CBD',
+    rating: 5,
+    service: 'Beard Trim & Shape',
+    text: 'Best beard trim I have ever had. Walked in looking rough, walked out looking sharp. Will be back every few weeks without a doubt.',
+    date: 'March 2024',
+  },
+  {
+    id: 'r3',
+    name: 'Tom K.',
+    location: 'Battery Point',
+    rating: 5,
+    service: 'Kids Haircut',
+    text: 'Brought my son for his first proper haircut. Diego was patient, relaxed him straight away, and the result was perfect. We are regulars now.',
+    date: 'February 2024',
+  },
+  {
+    id: 'r4',
+    name: 'Lucas B.',
+    location: 'North Hobart',
+    rating: 5,
+    service: 'Hair & Beard Combo',
+    text: 'Amazing value on the combo. Hair and beard both done to perfection in one session. Great atmosphere in the shop too — highly recommend.',
+    date: 'January 2024',
+  },
+  {
+    id: 'r5',
+    name: 'Aaron M.',
+    location: 'Glenorchy',
+    rating: 5,
+    service: 'Skin Fade',
+    text: 'Finally a barber in Hobart who actually knows how to do a skin fade properly. Diego is the real deal — professional, precise, and easy to talk to.',
+    date: 'December 2023',
+  },
+]
 
 export interface Service {
   id: string
