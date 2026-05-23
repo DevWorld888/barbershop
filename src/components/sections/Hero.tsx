@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Button from '@/components/ui/Button'
-import { BOOKING_URL } from '@/lib/data'
+import BookingTrigger from '@/components/ui/BookingTrigger'
 
 
 export default function Hero() {
@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
       {/* Background photo */}
       <Image
-        src="/hero/barberTasmania2.jpg"
+        src="/hero/b.png"
         alt="Diego's Barbershop – professional haircut in Hobart, Tasmania"
         fill
         priority
@@ -46,9 +46,9 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button href={BOOKING_URL} variant="primary" external>
+          <BookingTrigger variant="primary">
             Book Now
-          </Button>
+          </BookingTrigger>
           <Button href="#services" variant="outline">
             Our Services
           </Button>

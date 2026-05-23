@@ -1,6 +1,6 @@
 import ServiceCard from '@/components/ui/ServiceCard'
-import Button from '@/components/ui/Button'
-import { services, BOOKING_URL } from '@/lib/data'
+import BookingTrigger from '@/components/ui/BookingTrigger'
+import { services } from '@/lib/data'
 
 export default function Services() {
   return (
@@ -26,9 +26,9 @@ export default function Services() {
 
         {/* Section CTA */}
         <div className="mt-14 flex justify-center">
-          <Button href={BOOKING_URL} variant="primary" external>
+          <BookingTrigger variant="primary">
             Book Your Appointment
-          </Button>
+          </BookingTrigger>
         </div>
       </div>
     </section>

@@ -1,5 +1,4 @@
-import Button from '@/components/ui/Button'
-import { BOOKING_URL } from '@/lib/data'
+import BookingTrigger from '@/components/ui/BookingTrigger'
 
 export default function SpecialOffer() {
   return (
@@ -21,9 +20,9 @@ export default function SpecialOffer() {
               <span className="text-white font-semibold">15% off</span> any service.
               Experience premium Colombian barbering right here in Hobart.
             </p>
-            <Button href={BOOKING_URL} variant="primary" external>
-              Book & Save Now
-            </Button>
+            <BookingTrigger variant="primary">
+              Book &amp; Save Now
+            </BookingTrigger>
             <p className="mt-5 text-zinc-600 text-xs">
               *Valid for first-time clients only. Not valid with other offers.
             </p>

@@ -1,5 +1,17 @@
 
-export const BOOKING_URL = 'https://booksy.com'
+// Replace with the real Fresha URL before launch
+export const FRESHA_BOOKING_URL = 'https://www.fresha.com/book-now/diegosbarbershop'
+
+export const BOOKING_URL = FRESHA_BOOKING_URL
+
+export const WHATSAPP_NUMBER = '61412053218'
+
+export const WHATSAPP_MESSAGE =
+  "Hi 👋 Thanks for contacting Diego's Barbershop.\n\n" +
+  "For the fastest experience, please book your appointment online through our website using the 'Book Appointment' button.\n\n" +
+  "If you have a question before booking, we'll be happy to help."
+
+export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
 // Update all fields below with real business details before launch
 export const businessInfo = {

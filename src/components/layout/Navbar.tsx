@@ -2,17 +2,22 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { BOOKING_URL } from '@/lib/data'
+import { useBooking } from '@/context/booking'
 
 const NAV_LINKS = [
   { label: 'Services', href: '#services' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Gallery',  href: '#gallery' },
+  { label: 'Contact',  href: '#contact' },
 ]
-
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const { open: openBooking } = useBooking()
+
+  const handleBookClick = () => {
+    setIsOpen(false)
+    openBooking()
+  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-zinc-800">
@@ -53,14 +58,12 @@ export default function Navbar() {
         </ul>
 
         {/* Desktop CTA */}
-        <a
-          href={BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={openBooking}
           className="hidden md:inline-flex items-center justify-center bg-gold-500 text-black text-sm font-semibold uppercase tracking-widest px-6 py-2.5 hover:bg-gold-400 transition-colors"
         >
           Book Now
-        </a>
+        </button>
 
         {/* Mobile hamburger */}
         <button
@@ -71,27 +74,11 @@ export default function Navbar() {
           aria-controls="mobile-menu"
         >
           {isOpen ? (
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              aria-hidden="true"
-            >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <path d="M18 6L6 18M6 6l12 12" strokeLinecap="round" />
             </svg>
           ) : (
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              aria-hidden="true"
-            >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
               <path d="M3 8h18M3 16h18" strokeLinecap="round" />
             </svg>
           )}
@@ -117,14 +104,12 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 flex items-center justify-center bg-gold-500 text-black text-sm font-semibold uppercase tracking-widest py-3 hover:bg-gold-400 transition-colors"
+          <button
+            onClick={handleBookClick}
+            className="mt-4 w-full flex items-center justify-center bg-gold-500 text-black text-sm font-semibold uppercase tracking-widest py-3 hover:bg-gold-400 transition-colors"
           >
             Book Now
-          </a>
+          </button>
         </div>
       )}
     </header>

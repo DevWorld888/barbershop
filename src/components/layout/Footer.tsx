@@ -1,11 +1,12 @@
 import Link from 'next/link'
-import { businessInfo, BOOKING_URL } from '@/lib/data'
+import BookingTrigger from '@/components/ui/BookingTrigger'
+import { businessInfo } from '@/lib/data'
 
 const quickLinks = [
-  { label: 'Services',  href: '#services' },
-  { label: 'Gallery',   href: '#gallery' },
-  { label: 'Reviews',   href: '#reviews' },
-  { label: 'Contact',   href: '#contact' },
+  { label: 'Services', href: '#services' },
+  { label: 'Gallery',  href: '#gallery' },
+  { label: 'Reviews',  href: '#reviews' },
+  { label: 'Contact',  href: '#contact' },
 ]
 
 export default function Footer() {
@@ -30,14 +31,9 @@ export default function Footer() {
               Premium Colombian barbering in the heart of Hobart, Tasmania.
               Sharp fades, expert beard trims, and a premium experience every visit.
             </p>
-            <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-gold-500 text-black text-xs font-semibold uppercase tracking-widest px-6 py-3 hover:bg-gold-400 transition-colors"
-            >
+            <BookingTrigger variant="primary-sm">
               Book Now
-            </a>
+            </BookingTrigger>
           </div>
 
           {/* Quick links */}
@@ -110,7 +106,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-zinc-600 text-xs hover:text-zinc-400 transition-colors"
           >
-            Designed & built by iaugustodev
+            Designed &amp; built by iaugustodev
           </a>
         </div>
       </div>

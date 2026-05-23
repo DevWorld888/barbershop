@@ -1,3 +1,4 @@
+import { BookingProvider } from '@/context/booking'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import Hero from '@/components/sections/Hero'
@@ -8,10 +9,11 @@ import WhyChooseUs from '@/components/sections/WhyChooseUs'
 import Reviews from '@/components/sections/Reviews'
 import BookingCTA from '@/components/sections/BookingCTA'
 import LocationContact from '@/components/sections/LocationContact'
+import WhatsAppButton from '@/components/ui/WhatsAppButton'
 
 export default function HomePage() {
   return (
-    <>
+    <BookingProvider>
       <Navbar />
       <main>
         <Hero />
@@ -24,6 +26,7 @@ export default function HomePage() {
         <LocationContact />
       </main>
       <Footer />
-    </>
+      <WhatsAppButton />
+    </BookingProvider>
   )
 }
