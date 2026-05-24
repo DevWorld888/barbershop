@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import BookingTrigger from '@/components/ui/BookingTrigger'
-import { businessInfo } from '@/lib/data'
+import { businessInfo, FRESHA_BOOKING_URL } from '@/lib/data'
 
 const quickLinks = [
   { label: 'Services', href: '#services' },
@@ -31,9 +30,14 @@ export default function Footer() {
               Premium Colombian barbering in the heart of Hobart, Tasmania.
               Sharp fades, expert beard trims, and a premium experience every visit.
             </p>
-            <BookingTrigger variant="primary-sm">
+            <a
+              href={FRESHA_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-gold-500 text-black hover:bg-gold-400 text-xs px-6 py-3 font-semibold uppercase tracking-widest transition-colors"
+            >
               Book Now
-            </BookingTrigger>
+            </a>
           </div>
 
           {/* Quick links */}

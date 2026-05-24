@@ -1,6 +1,5 @@
 import ServiceCard from '@/components/ui/ServiceCard'
-import BookingTrigger from '@/components/ui/BookingTrigger'
-import { services } from '@/lib/data'
+import { services, FRESHA_BOOKING_URL } from '@/lib/data'
 
 export default function Services() {
   return (
@@ -26,9 +25,14 @@ export default function Services() {
 
         {/* Section CTA */}
         <div className="mt-14 flex justify-center">
-          <BookingTrigger variant="primary">
+          <a
+            href={FRESHA_BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-gold-500 text-black hover:bg-gold-400 text-sm px-8 py-4 font-semibold uppercase tracking-widest transition-colors"
+          >
             Book Your Appointment
-          </BookingTrigger>
+          </a>
         </div>
       </div>
     </section>

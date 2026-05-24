@@ -1,4 +1,4 @@
-import BookingTrigger from '@/components/ui/BookingTrigger'
+import { FRESHA_BOOKING_URL } from '@/lib/data'
 
 export default function SpecialOffer() {
   return (
@@ -20,9 +20,14 @@ export default function SpecialOffer() {
               <span className="text-white font-semibold">15% off</span> any service.
               Experience premium Colombian barbering right here in Hobart.
             </p>
-            <BookingTrigger variant="primary">
+            <a
+              href={FRESHA_BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-gold-500 text-black hover:bg-gold-400 text-sm px-8 py-4 font-semibold uppercase tracking-widest transition-colors"
+            >
               Book &amp; Save Now
-            </BookingTrigger>
+            </a>
             <p className="mt-5 text-zinc-600 text-xs">
               *Valid for first-time clients only. Not valid with other offers.
             </p>

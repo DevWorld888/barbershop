@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { useBooking } from '@/context/booking'
+import { FRESHA_BOOKING_URL } from '@/lib/data'
 
 const NAV_LINKS = [
   { label: 'Services', href: '#services' },
@@ -12,12 +12,6 @@ const NAV_LINKS = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
-  const { open: openBooking } = useBooking()
-
-  const handleBookClick = () => {
-    setIsOpen(false)
-    openBooking()
-  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-zinc-800">
@@ -58,12 +52,14 @@ export default function Navbar() {
         </ul>
 
         {/* Desktop CTA */}
-        <button
-          onClick={openBooking}
+        <a
+          href={FRESHA_BOOKING_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden md:inline-flex items-center justify-center bg-gold-500 text-black text-sm font-semibold uppercase tracking-widest px-6 py-2.5 hover:bg-gold-400 transition-colors"
         >
           Book Now
-        </button>
+        </a>
 
         {/* Mobile hamburger */}
         <button
@@ -104,12 +100,15 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <button
-            onClick={handleBookClick}
+          <a
+            href={FRESHA_BOOKING_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsOpen(false)}
             className="mt-4 w-full flex items-center justify-center bg-gold-500 text-black text-sm font-semibold uppercase tracking-widest py-3 hover:bg-gold-400 transition-colors"
           >
             Book Now
-          </button>
+          </a>
         </div>
       )}
     </header>

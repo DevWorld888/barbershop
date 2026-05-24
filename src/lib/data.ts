@@ -110,16 +110,16 @@ export interface GalleryImage {
 
 export const galleryImages: GalleryImage[] = [
   {
-    src: '/gallery/cut-1.jpg',
+    src: '/gallery/skin-fade-barber-hobart.webp',
     alt: "Skin fade haircut at Diego's Barbershop Hobart",
   },
   {
-    src: '/gallery/cut-2.jpg',
+    src: '/gallery/haircut-barber-hobart.webp',
     alt: 'Classic haircut and style — barbershop Hobart Tasmania',
   },
   {
-    src: '/gallery/cut-3.jpg',
-    alt: "Beard trim and shape at Diego's Barbershop Hobart",
+    src: '/gallery/haircut-lines-barber-hobart.webp',
+    alt: "Haircut with lines at Diego's Barbershop Hobart",
   },
   {
     src: '/gallery/cut-4.jpg',

@@ -8,8 +8,8 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
       {/* Background photo */}
       <Image
-        src="/hero/b.png"
-        alt="Diego's Barbershop – professional haircut in Hobart, Tasmania"
+        src="/hero/premium-barber-hobart-tasmania.webp"
+        alt="Premium barber haircut experience in Hobart Tasmania"
         fill
         priority
         className="object-cover object-center opacity-40"
