@@ -96,11 +96,11 @@ export const reviews: Review[] = [
 ]
 
 export interface Service {
-  id: string
-  index: string
-  name: string
-  description: string
+  title: string
+  duration: string
+  priceLabel?: string
   price: string
+  image: string
 }
 
 export interface GalleryImage {
@@ -137,51 +137,97 @@ export const galleryImages: GalleryImage[] = [
 
 export const services: Service[] = [
   {
-    id: 'haircut',
-    index: '01',
-    name: 'Haircut & Style',
-    description:
-      'Classic and modern cuts shaped to your face and style. Includes wash and finish.',
-    price: 'From $45',
+    title: 'Fade Haircut',
+    duration: '30 min',
+    priceLabel: 'From',
+    price: '$40',
+    image: '/services/fade-haircut.jpg',
   },
   {
-    id: 'fade',
-    index: '02',
-    name: 'Skin Fade',
-    description:
-      "Razor-sharp fades from zero to any length — a signature specialty at Diego's.",
-    price: 'From $45',
+    title: 'Men Regular Hair Cut',
+    duration: '25 min',
+    priceLabel: 'Between',
+    price: '$35',
+    image: '/services/regular-haircut.jpg',
   },
   {
-    id: 'beard',
-    index: '03',
-    name: 'Beard Trim & Shape',
-    description:
-      'Expert beard sculpting and grooming to keep your look clean and defined.',
-    price: 'From $25',
+    title: 'Skinfade and Beard Combo',
+    duration: '30 min',
+    price: '$55',
+    image: '/services/skinfade-beard.jpg',
   },
   {
-    id: 'combo',
-    index: '04',
-    name: 'Hair & Beard Combo',
-    description:
-      'The full treatment — a fresh cut plus precision beard grooming in one session.',
-    price: 'From $65',
+    title: 'Regular Haircut and Beard Trim',
+    duration: '30 min',
+    price: '$50',
+    image: '/services/regular-haircut-beard.jpg',
   },
   {
-    id: 'kids',
-    index: '05',
-    name: 'Kids Haircut',
-    description:
-      'Sharp, fun cuts for boys up to 12 years old. Fast, friendly and stress-free.',
-    price: 'From $30',
+    title: 'Buzz Cut and Beard Combo',
+    duration: '25 min',
+    price: '$38',
+    image: '/services/buzzcut-beard.jpg',
   },
   {
-    id: 'shave',
-    index: '06',
-    name: 'Hot Towel Shave',
-    description:
-      'A traditional straight-razor shave with hot towel finish and soothing aftercare.',
-    price: 'From $40',
+    title: 'Buzz Cut',
+    duration: '15 min',
+    priceLabel: 'From',
+    price: '$15',
+    image: '/services/buzzcut.jpg',
+  },
+  {
+    title: 'Regular Beard Trim and Line Up',
+    duration: '30 min',
+    price: '$25',
+    image: '/services/beard-trim.jpg',
+  },
+  {
+    title: 'Long Beard Trim',
+    duration: '30 min',
+    price: '$28',
+    image: '/services/long-beard.jpg',
+  },
+  {
+    title: 'Wet Shave (Beard or Head)',
+    duration: '30 min',
+    price: '$25',
+    image: '/services/wet-shave.jpg',
+  },
+  {
+    title: 'Scissor Haircut',
+    duration: '25 min',
+    price: '$35',
+    image: '/services/scissor-haircut.jpg',
+  },
+  {
+    title: 'Restyling',
+    duration: '30 min',
+    price: '$40',
+    image: '/services/restyling.jpg',
+  },
+  {
+    title: 'Senior Haircut',
+    duration: '30 min',
+    price: '$30',
+    image: '/services/senior-haircut.jpg',
+  },
+  {
+    title: 'Kids Fade Haircut (Under Age Of 9)',
+    duration: '25 min',
+    price: '$38',
+    image: '/services/kids-fade.jpg',
+  },
+  {
+    title: 'Kids Regular Haircut (Under Age of 9)',
+    duration: '25 min',
+    price: '$35',
+    image: '/services/kids-regular.jpg',
+  },
+  {
+    title: 'Waxing (nose, ear, eyebrows, cheek) each',
+    duration: '5 min',
+    priceLabel: 'From',
+    price: '$5',
+    image: '/services/waxing.jpg',
   },
 ]
