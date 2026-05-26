@@ -1,12 +1,27 @@
+'use client'
+
 import Image from 'next/image'
+import { motion, useReducedMotion } from 'framer-motion'
 import Button from '@/components/ui/Button'
 import BookingTrigger from '@/components/ui/BookingTrigger'
 
+const ease = [0.22, 1, 0.36, 1] as const
 
 export default function Hero() {
+  const shouldReduceMotion = useReducedMotion() === true
+
+  const fadeUp = (delay: number, y = 20) =>
+    shouldReduceMotion
+      ? {}
+      : {
+          initial: { opacity: 0, y },
+          animate: { opacity: 1, y: 0 },
+          transition: { duration: 0.65, delay, ease },
+        }
+
   return (
     <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
-      {/* Background photo */}
+      {/* Background photo — not animated to preserve LCP */}
       <Image
         src="/hero/premium-barber-hobart-tasmania.webp"
         alt="Premium barber haircut experience in Hobart Tasmania"
@@ -16,7 +31,7 @@ export default function Hero() {
         sizes="100vw"
       />
 
-      {/* Gradient overlay — keeps text readable on the left */}
+      {/* Gradient overlay */}
       <div
         className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"
         aria-hidden="true"
@@ -26,36 +41,42 @@ export default function Hero() {
       <div className="absolute top-0 bottom-0 left-0 w-1 bg-gold-500" aria-hidden="true" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-32 sm:py-40 w-full">
-        {/* Location eyebrow */}
-        <p className="text-gold-500 text-xs font-medium uppercase tracking-[0.3em] mb-6">
+        <motion.p
+          className="text-gold-500 text-xs font-medium uppercase tracking-[0.3em] mb-6"
+          {...fadeUp(0.1, 16)}
+        >
           Hobart, Tasmania
-        </p>
+        </motion.p>
 
-        {/* H1 — only one per page */}
-        <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-6 max-w-2xl">
+        <motion.h1
+          className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-6 max-w-2xl"
+          {...fadeUp(0.25, 28)}
+        >
           Premium Barber
           <br />
           in Hobart
-        </h1>
+        </motion.h1>
 
-        {/* Subheading */}
-        <p className="text-zinc-400 text-lg sm:text-xl max-w-xl leading-relaxed mb-10">
+        <motion.p
+          className="text-zinc-400 text-lg sm:text-xl max-w-xl leading-relaxed mb-10"
+          {...fadeUp(0.45, 16)}
+        >
           Sharp fades, expert beard trims and modern grooming — by Diego,
           Hobart&apos;s trusted Colombian barber.
-        </p>
+        </motion.p>
 
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row gap-4">
-          <BookingTrigger variant="primary">
-            Book Now
-          </BookingTrigger>
-          <Button href="#services" variant="outline">
-            Our Services
-          </Button>
-        </div>
+        <motion.div
+          className="flex flex-col sm:flex-row gap-4"
+          {...fadeUp(0.6, 16)}
+        >
+          <BookingTrigger variant="primary">Book Now</BookingTrigger>
+          <Button href="#services" variant="outline">Our Services</Button>
+        </motion.div>
 
-        {/* Location indicator */}
-        <div className="mt-12 flex items-center gap-2 text-zinc-500 text-sm">
+        <motion.div
+          className="mt-12 flex items-center gap-2 text-zinc-500 text-sm"
+          {...fadeUp(0.75, 0)}
+        >
           <svg
             width="16"
             height="16"
@@ -73,7 +94,7 @@ export default function Hero() {
             <circle cx="12" cy="9" r="2.5" />
           </svg>
           <span>Hobart CBD, Tasmania, Australia</span>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

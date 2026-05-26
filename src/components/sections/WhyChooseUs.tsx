@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import Reveal from '@/components/animations/Reveal'
 
 interface Reason {
   id: string
@@ -91,34 +92,38 @@ export default function WhyChooseUs() {
       <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
 
         {/* Section header */}
-        <div className="mb-14 sm:mb-16">
-          <p className="text-gold-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
-            Why Us
-          </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-            Why Choose Diego&apos;s
-          </h2>
-          <div className="w-12 h-px bg-gold-500" aria-hidden="true" />
-        </div>
+        <Reveal>
+          <div className="mb-14 sm:mb-16">
+            <p className="text-gold-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
+              Why Us
+            </p>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
+              Why Choose Diego&apos;s
+            </h2>
+            <div className="w-12 h-px bg-gold-500" aria-hidden="true" />
+          </div>
+        </Reveal>
 
         {/* Reasons grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-16 lg:gap-y-12">
-          {reasons.map((reason) => (
-            <div key={reason.id} className="flex gap-8">
-              {/* Icon */}
-              <div className="shrink-0 mt-1 w-12 h-12 border border-gold-600 flex items-center justify-center text-gold-500">
-                {reason.icon}
+          {reasons.map((reason, i) => (
+            <Reveal key={reason.id} delay={i * 0.09}>
+              <div className="flex gap-8">
+                {/* Icon */}
+                <div className="shrink-0 mt-1 w-12 h-12 border border-gold-600 flex items-center justify-center text-gold-500">
+                  {reason.icon}
+                </div>
+                {/* Text */}
+                <div>
+                  <h3 className="text-white font-bold text-base sm:text-lg mb-2">
+                    {reason.heading}
+                  </h3>
+                  <p className="text-zinc-400 text-sm leading-relaxed">
+                    {reason.description}
+                  </p>
+                </div>
               </div>
-              {/* Text */}
-              <div>
-                <h3 className="text-white font-bold text-base sm:text-lg mb-2">
-                  {reason.heading}
-                </h3>
-                <p className="text-zinc-400 text-sm leading-relaxed">
-                  {reason.description}
-                </p>
-              </div>
-            </div>
+            </Reveal>
           ))}
         </div>
 

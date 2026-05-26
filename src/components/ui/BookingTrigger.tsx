@@ -1,6 +1,7 @@
 'use client'
 
 import { type ReactNode } from 'react'
+import { motion } from 'framer-motion'
 import { useBooking } from '@/context/booking'
 
 // Variants:
@@ -17,6 +18,8 @@ const VARIANT_STYLES: Record<TriggerVariant, string> = {
   'outline':    'border border-zinc-600 text-white hover:border-gold-500 hover:text-gold-500 text-sm px-8 py-4',
   'dark':       'bg-black text-white hover:bg-zinc-900 text-sm px-10 py-4',
 }
+
+const ease = [0.22, 1, 0.36, 1] as const
 
 interface BookingTriggerProps {
   children: ReactNode
@@ -40,12 +43,21 @@ export default function BookingTrigger({
     open()
   }
 
+  const isGold = variant === 'primary' || variant === 'primary-sm'
+
+  const hoverEffect = isGold
+    ? { scale: 1.03, boxShadow: '0 0 24px rgba(201, 168, 76, 0.4)' }
+    : { scale: 1.02 }
+
   return (
-    <button
+    <motion.button
       onClick={handleClick}
       className={`inline-flex items-center justify-center font-semibold uppercase tracking-widest transition-colors ${VARIANT_STYLES[variant]} ${className}`}
+      whileHover={hoverEffect}
+      whileTap={{ scale: 0.97 }}
+      transition={{ duration: 0.2, ease }}
     >
       {children}
-    </button>
+    </motion.button>
   )
 }

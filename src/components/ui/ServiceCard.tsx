@@ -18,7 +18,7 @@ const imageVariants = {
 export default function ServiceCard({ service }: { service: Service }) {
   return (
     <motion.article
-      className="flex flex-col overflow-hidden bg-zinc-900 border border-zinc-800 shadow-lg hover:border-gold-500/40 transition-colors duration-300"
+      className="flex flex-col h-full overflow-hidden bg-zinc-900 border border-zinc-800 shadow-lg hover:border-gold-500/40 transition-colors duration-300"
       initial="rest"
       whileHover="hover"
       variants={cardVariants}

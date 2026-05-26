@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
 import { FRESHA_BOOKING_URL } from '@/lib/data'
 
 const NAV_LINKS = [
@@ -10,11 +11,19 @@ const NAV_LINKS = [
   { label: 'Contact',  href: '#contact' },
 ]
 
+const ease = [0.22, 1, 0.36, 1] as const
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
+  const shouldReduceMotion = useReducedMotion() === true
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-zinc-800">
+    <motion.header
+      className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-zinc-800"
+      initial={shouldReduceMotion ? false : { opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease }}
+    >
       <nav
         className="max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between h-16 sm:h-20"
         aria-label="Main navigation"
@@ -81,36 +90,44 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
-      {isOpen && (
-        <div
-          id="mobile-menu"
-          className="md:hidden bg-zinc-900 border-t border-zinc-800 px-6 py-4"
-        >
-          <ul className="flex flex-col" role="list">
-            {NAV_LINKS.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="block py-3 text-zinc-300 text-sm uppercase tracking-wider hover:text-white border-b border-zinc-800 last:border-0 transition-colors"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <a
-            href={FRESHA_BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setIsOpen(false)}
-            className="mt-4 w-full flex items-center justify-center bg-gold-500 text-black text-sm font-semibold uppercase tracking-widest py-3 hover:bg-gold-400 transition-colors"
+      {/* Mobile menu — animated slide down */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            id="mobile-menu"
+            className="md:hidden bg-zinc-900 border-t border-zinc-800 overflow-hidden"
+            initial={shouldReduceMotion ? false : { height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.25, ease }}
           >
-            Book Now
-          </a>
-        </div>
-      )}
-    </header>
+            <div className="px-6 py-4">
+              <ul className="flex flex-col" role="list">
+                {NAV_LINKS.map((link) => (
+                  <li key={link.href}>
+                    <a
+                      href={link.href}
+                      className="block py-3 text-zinc-300 text-sm uppercase tracking-wider hover:text-white border-b border-zinc-800 last:border-0 transition-colors"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={FRESHA_BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsOpen(false)}
+                className="mt-4 w-full flex items-center justify-center bg-gold-500 text-black text-sm font-semibold uppercase tracking-widest py-3 hover:bg-gold-400 transition-colors"
+              >
+                Book Now
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.header>
   )
 }
