@@ -33,15 +33,15 @@ export default function Navbar() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="/logo/logobarber1.png"
-            alt="Diego's Barbershop logo"
+            alt="Mana Fade Studio logo"
             className="w-10 h-10 sm:w-12 sm:h-12 object-cover group-hover:brightness-110 transition"
           />
           <span className="flex flex-col leading-tight">
-            <span className="text-white font-bold text-xl sm:text-2xl uppercase tracking-wider">
-              Diego&apos;s
+            <span className="text-white font-bold text-xl sm:text-2xl uppercase tracking-[0.15em]">
+              Mana Fade
             </span>
-            <span className="text-gold-500 text-[10px] uppercase tracking-[0.25em]">
-              Barbershop
+            <span className="text-gold-500 text-[10px] uppercase tracking-[0.3em]">
+              Studio
             </span>
           </span>
         </Link>

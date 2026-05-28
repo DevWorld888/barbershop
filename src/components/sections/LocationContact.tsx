@@ -114,7 +114,7 @@ export default function LocationContact() {
                     rel="noopener noreferrer"
                     className="text-white text-sm hover:text-gold-500 transition-colors"
                   >
-                    @diegosbarbershop
+                    @manafadestudio
                   </a>
                 </ContactItem>
               </address>
@@ -154,7 +154,7 @@ export default function LocationContact() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Diego's Barbershop — Hobart CBD, Tasmania"
+                title="Mana Fade Studio — Hobart CBD, Tasmania"
               />
             </div>
           </Reveal>

@@ -21,15 +21,15 @@ export default function Footer() {
             {/* Brand */}
             <div>
               <Link href="/" className="flex flex-col leading-none mb-5">
-                <span className="text-white font-bold text-xl uppercase tracking-wider">
-                  Diego&apos;s
+                <span className="text-white font-bold text-xl uppercase tracking-[0.15em]">
+                  Mana Fade
                 </span>
-                <span className="text-gold-500 text-[10px] uppercase tracking-[0.25em]">
-                  Barbershop
+                <span className="text-gold-500 text-[10px] uppercase tracking-[0.3em]">
+                  Studio
                 </span>
               </Link>
               <p className="text-zinc-400 text-sm leading-relaxed mb-7 max-w-xs">
-                Premium Colombian barbering in the heart of Hobart, Tasmania.
+                Premium barber studio in the heart of Hobart, Tasmania.
                 Sharp fades, expert beard trims, and a premium experience every visit.
               </p>
               <a
@@ -91,7 +91,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     className="text-zinc-400 text-sm hover:text-gold-500 transition-colors"
                   >
-                    @diegosbarbershop
+                    @manafadestudio
                   </a>
                 </li>
               </ul>
@@ -105,7 +105,7 @@ export default function Footer() {
       <div className="border-t border-zinc-800">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-zinc-600 text-xs">
-            &copy; {new Date().getFullYear()} Diego&apos;s Barbershop. All rights reserved.
+            &copy; {new Date().getFullYear()} Mana Fade Studio. All rights reserved.
           </p>
           <a
             href="https://www.iaugustodev.com/"

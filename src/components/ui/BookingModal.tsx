@@ -130,7 +130,7 @@ function ModalOverlay({ onClose }: { onClose: () => void }) {
         <div className="px-6 pt-5 sm:pt-8 pb-6">
           <div className="flex items-start justify-between gap-4 mb-4">
             <p className="text-gold-500 text-[10px] font-semibold uppercase tracking-[0.28em] pt-1">
-              Diego&apos;s Barbershop · Hobart
+              Mana Fade Studio · Hobart
             </p>
             <button
               onClick={onClose}

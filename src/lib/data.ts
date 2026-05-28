@@ -1,13 +1,13 @@
 
 // Replace with the real Fresha URL before launch
-export const FRESHA_BOOKING_URL = 'https://www.fresha.com/book-now/diegosbarbershop'
+export const FRESHA_BOOKING_URL = 'https://www.fresha.com/book-now/manafadestudio'
 
 export const BOOKING_URL = FRESHA_BOOKING_URL
 
 export const WHATSAPP_NUMBER = '61412053218'
 
 export const WHATSAPP_MESSAGE =
-  "Hi 👋 Thanks for contacting Diego's Barbershop.\n\n" +
+  "Hi 👋 Thanks for contacting Mana Fade Studio.\n\n" +
   "For the fastest experience, please book your appointment online through our website using the 'Book Appointment' button.\n\n" +
   "If you have a question before booking, we'll be happy to help."
 
@@ -17,8 +17,8 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURICo
 export const businessInfo = {
   address: 'Hobart CBD, TAS 7000, Australia',
   phone: '+61 400 000 000',
-  email: 'hello@diegosbarbershop.com.au',
-  instagram: 'https://instagram.com/diegosbarbershop',
+  email: 'hello@manafadestudio.com.au',
+  instagram: 'https://instagram.com/manafadestudio',
   googleMapsUrl: 'https://maps.google.com/?q=Hobart+CBD+Tasmania+Australia',
   mapEmbedUrl:
     'https://maps.google.com/maps?q=Hobart+CBD+Tasmania+Australia&t=&z=15&ie=UTF8&iwloc=B&output=embed',
@@ -54,7 +54,7 @@ export const reviews: Review[] = [
     location: 'Sandy Bay',
     rating: 5,
     service: 'Skin Fade',
-    text: 'Diego gave me the cleanest fade I have had in years. The attention to detail is next level — I drove all the way from Sandy Bay and it was absolutely worth it.',
+    text: 'Got the cleanest fade I have had in years. The attention to detail is next level — I drove all the way from Sandy Bay and it was absolutely worth it.',
     date: 'April 2024',
   },
   {
@@ -72,7 +72,7 @@ export const reviews: Review[] = [
     location: 'Battery Point',
     rating: 5,
     service: 'Kids Haircut',
-    text: 'Brought my son for his first proper haircut. Diego was patient, relaxed him straight away, and the result was perfect. We are regulars now.',
+    text: 'Brought my son for his first proper haircut. The barber was patient, relaxed him straight away, and the result was perfect. We are regulars now.',
     date: 'February 2024',
   },
   {
@@ -90,7 +90,7 @@ export const reviews: Review[] = [
     location: 'Glenorchy',
     rating: 5,
     service: 'Skin Fade',
-    text: 'Finally a barber in Hobart who actually knows how to do a skin fade properly. Diego is the real deal — professional, precise, and easy to talk to.',
+    text: 'Finally a barber in Hobart who actually knows how to do a skin fade properly. Mana Fade is the real deal — professional, precise, and easy to talk to.',
     date: 'December 2023',
   },
 ]
@@ -111,7 +111,7 @@ export interface GalleryImage {
 export const galleryImages: GalleryImage[] = [
   {
     src: '/gallery/skin-fade-barber-hobart.webp',
-    alt: "Skin fade haircut at Diego's Barbershop Hobart",
+    alt: "Skin fade haircut at Mana Fade Studio Hobart",
   },
   {
     src: '/gallery/haircut-barber-hobart.webp',
@@ -119,19 +119,19 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     src: '/gallery/haircut-lines-barber-hobart.webp',
-    alt: "Haircut with lines at Diego's Barbershop Hobart",
+    alt: "Haircut with lines at Mana Fade Studio Hobart",
   },
   {
     src: '/gallery/modern-curly-fade-haircut-hobart.webp',
-    alt: "Modern curly fade haircut at Diego's Barbershop Hobart",
+    alt: "Modern curly fade haircut at Mana Fade Studio Hobart",
   },
   {
     src: '/gallery/mens-beard-trim-fade-hobart.webp',
-    alt: "Men's beard trim and fade at Diego's Barbershop Hobart",
+    alt: "Men's beard trim and fade at Mana Fade Studio Hobart",
   },
   {
     src: '/gallery/curly-skin-fade-barber-hobart.webp',
-    alt: "Curly skin fade haircut at Diego's Barbershop Hobart",
+    alt: "Curly skin fade haircut at Mana Fade Studio Hobart",
   },
 ]
 

@@ -8,13 +8,13 @@ const geist = Geist({
 })
 
 export const metadata: Metadata = {
-  title: "Premium Barber in Hobart | Diego's Barbershop",
+  title: 'MANA FADE STUDIO | Premium Barber Shop in Hobart',
   description:
-    "Premium Colombian barbershop in Hobart, Tasmania. Sharp fades, beard trims & modern grooming. Book online today.",
+    'Premium barber studio in Hobart specialising in fades, beard trims and modern men\'s grooming.',
   openGraph: {
-    title: "Premium Barber in Hobart | Diego's Barbershop",
+    title: 'MANA FADE STUDIO | Premium Barber Shop in Hobart',
     description:
-      "Premium Colombian barbershop in Hobart, Tasmania. Sharp fades, beard trims & modern grooming.",
+      'Premium barber studio in Hobart specialising in fades, beard trims and modern men\'s grooming.',
     type: 'website',
     locale: 'en_AU',
   },
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'BarberShop',
-  name: "Diego's Barbershop",
-  description: 'Premium Colombian barbershop in Hobart, Tasmania.',
+  name: 'Mana Fade Studio',
+  description: 'Premium barber studio in Hobart, Tasmania specialising in fades, beard trims and modern men\'s grooming.',
   address: {
     '@type': 'PostalAddress',
     addressLocality: 'Hobart',

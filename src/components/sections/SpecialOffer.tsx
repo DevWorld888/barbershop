@@ -14,7 +14,7 @@ export default function SpecialOffer() {
                 Limited Offer
               </p>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-                New to Diego&apos;s?
+                New to Mana Fade?
               </h2>
               <div className="w-12 h-px bg-gold-500 mb-6" aria-hidden="true" />
               <p className="text-zinc-400 text-lg leading-relaxed mb-8 max-w-md">

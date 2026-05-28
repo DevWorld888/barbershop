@@ -61,8 +61,8 @@ export default function Hero() {
           className="text-zinc-400 text-lg sm:text-xl max-w-xl leading-relaxed mb-10"
           {...fadeUp(0.45, 16)}
         >
-          Sharp fades, expert beard trims and modern grooming — by Diego,
-          Hobart&apos;s trusted Colombian barber.
+          Sharp fades, expert beard trims and modern grooming —
+          Hobart&apos;s trusted Colombian barber studio.
         </motion.p>
 
         <motion.div

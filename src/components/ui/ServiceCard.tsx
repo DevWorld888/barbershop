@@ -33,7 +33,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         >
           <Image
             src={service.image}
-            alt={`${service.title} — Diego's Barbershop Hobart`}
+            alt={`${service.title} — Mana Fade Studio Hobart`}
             fill
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
             className="object-cover"
@@ -74,7 +74,7 @@ export default function ServiceCard({ service }: { service: Service }) {
           target="_blank"
           rel="noopener noreferrer"
           className="mt-auto inline-flex items-center justify-center border border-gold-500/60 text-gold-500 hover:bg-gold-500 hover:text-black text-xs font-semibold uppercase tracking-widest py-3 px-4 transition-all duration-200"
-          aria-label={`Book ${service.title} at Diego's Barbershop Hobart`}
+          aria-label={`Book ${service.title} at Mana Fade Studio Hobart`}
         >
           Book Now
         </a>

@@ -82,7 +82,7 @@ const reasons: Reason[] = [
     ),
     heading: 'All Hair Types Welcome',
     description:
-      'Whether straight, wavy, or curly — Diego has the skill and experience to work with any texture and any style.',
+      'Whether straight, wavy, or curly — we have the skill and experience to work with any texture and any style.',
   },
 ]
 
@@ -98,7 +98,7 @@ export default function WhyChooseUs() {
               Why Us
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-              Why Choose Diego&apos;s
+              Why Choose Mana Fade
             </h2>
             <div className="w-12 h-px bg-gold-500" aria-hidden="true" />
           </div>
