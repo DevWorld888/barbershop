@@ -101,6 +101,8 @@ export interface Service {
   priceLabel?: string
   price: string
   image: string
+  /** CSS object-position value to control focal crop inside the card frame */
+  imagePosition?: string
 }
 
 export interface GalleryImage {
@@ -141,32 +143,37 @@ export const services: Service[] = [
     duration: '30 min',
     priceLabel: 'From',
     price: '$40',
-    image: '/services/fade-haircut.webp',
+    image: '/gallery/skin-fade-barber-hobart.webp',
+    imagePosition: '50% 35%',
   },
   {
     title: 'Men Regular Hair Cut',
     duration: '25 min',
     priceLabel: 'Between',
     price: '$35',
-    image: '/services/regular-haircut.webp',
+    image: '/gallery/haircut-barber-hobart.webp',
+    imagePosition: '50% 20%',
   },
   {
     title: 'Skinfade and Beard Combo',
     duration: '30 min',
     price: '$55',
-    image: '/services/skinfade-beard.webp',
+    image: '/gallery/mens-beard-trim-fade-hobart.webp',
+    imagePosition: 'center',
   },
   {
     title: 'Regular Haircut and Beard Trim',
     duration: '30 min',
     price: '$50',
     image: '/services/regular-haircut-beard.webp',
+    imagePosition: '50% 20%',
   },
   {
     title: 'Buzz Cut and Beard Combo',
     duration: '25 min',
     price: '$38',
     image: '/services/buzzcut-beard.webp',
+    imagePosition: 'center',
   },
   {
     title: 'Buzz Cut',
@@ -174,54 +181,63 @@ export const services: Service[] = [
     priceLabel: 'From',
     price: '$15',
     image: '/services/buzzcut.webp',
+    imagePosition: '50% 15%',
   },
   {
     title: 'Regular Beard Trim and Line Up',
     duration: '30 min',
     price: '$25',
     image: '/services/beard-trim.webp',
+    imagePosition: 'center',
   },
   {
     title: 'Long Beard Trim',
     duration: '30 min',
     price: '$28',
     image: '/services/long-beard.webp',
+    imagePosition: 'center',
   },
   {
     title: 'Wet Shave (Beard or Head)',
     duration: '30 min',
     price: '$25',
     image: '/services/wet-shave.webp',
+    imagePosition: 'center',
   },
   {
     title: 'Scissor Haircut',
     duration: '25 min',
     price: '$35',
-    image: '/services/scissor-haircut.webp',
+    image: '/gallery/haircut-lines-barber-hobart.webp',
+    imagePosition: '50% 25%',
   },
   {
     title: 'Restyling',
     duration: '30 min',
     price: '$40',
-    image: '/services/restyling.webp',
+    image: '/gallery/modern-curly-fade-haircut-hobart.webp',
+    imagePosition: 'center',
   },
   {
     title: 'Senior Haircut',
     duration: '30 min',
     price: '$30',
     image: '/services/senior-haircut.webp',
+    imagePosition: '50% 15%',
   },
   {
     title: 'Kids Fade Haircut (Under Age Of 9)',
     duration: '25 min',
     price: '$38',
     image: '/services/kids-fade.webp',
+    imagePosition: '50% 20%',
   },
   {
     title: 'Kids Regular Haircut (Under Age of 9)',
     duration: '25 min',
     price: '$35',
     image: '/services/kids-regular.webp',
+    imagePosition: '50% 20%',
   },
   {
     title: 'Waxing (nose, ear, eyebrows, cheek) each',
@@ -229,5 +245,6 @@ export const services: Service[] = [
     priceLabel: 'From',
     price: '$5',
     image: '/services/waxing.webp',
+    imagePosition: 'center',
   },
 ]
