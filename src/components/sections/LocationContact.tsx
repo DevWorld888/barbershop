@@ -154,7 +154,7 @@ export default function LocationContact() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Mana Fade Studio — Hobart CBD, Tasmania"
+                title="Mana Fade Studio — Mount Nelson, Hobart, Tasmania"
               />
             </div>
           </Reveal>

@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Background photo — not animated to preserve LCP */}
       <Image
         src="/hero/premium-barber-hobart-tasmania.webp"
-        alt="Premium barber haircut experience in Hobart Tasmania"
+        alt="Premium barber shop skin fade haircut in Mount Nelson Hobart Tasmania"
         fill
         priority
         className="object-cover object-center opacity-40"
@@ -45,24 +45,24 @@ export default function Hero() {
           className="text-gold-500 text-xs font-medium uppercase tracking-[0.3em] mb-6"
           {...fadeUp(0.1, 16)}
         >
-          Hobart, Tasmania
+          Mount Nelson, Hobart, Tasmania
         </motion.p>
 
         <motion.h1
           className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-6 max-w-2xl"
           {...fadeUp(0.25, 28)}
         >
-          Premium Barber
+          Premium Barber Shop
           <br />
-          in Hobart
+          in Hobart Tasmania
         </motion.h1>
 
         <motion.p
           className="text-zinc-400 text-lg sm:text-xl max-w-xl leading-relaxed mb-10"
           {...fadeUp(0.45, 16)}
         >
-          Sharp fades, expert beard trims and modern grooming —
-          Hobart&apos;s trusted Colombian barber studio.
+          Sharp skin fades, beard trims and modern men&apos;s haircuts —
+          your local barber shop in Mount Nelson, Hobart.
         </motion.p>
 
         <motion.div
@@ -93,7 +93,7 @@ export default function Hero() {
             />
             <circle cx="12" cy="9" r="2.5" />
           </svg>
-          <span>Hobart CBD, Tasmania, Australia</span>
+          <span>Mount Nelson, Hobart, Tasmania, Australia</span>
         </motion.div>
       </div>
     </section>

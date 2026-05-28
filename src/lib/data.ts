@@ -15,13 +15,13 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURICo
 
 // Update all fields below with real business details before launch
 export const businessInfo = {
-  address: 'Hobart CBD, TAS 7000, Australia',
+  address: 'Olinda Grove, Mount Nelson TAS 7007, Australia',
   phone: '+61 400 000 000',
   email: 'hello@manafadestudio.com.au',
   instagram: 'https://instagram.com/manafadestudio',
-  googleMapsUrl: 'https://maps.google.com/?q=Hobart+CBD+Tasmania+Australia',
+  googleMapsUrl: 'https://maps.google.com/?q=Mount+Nelson+Hobart+Tasmania+Australia',
   mapEmbedUrl:
-    'https://maps.google.com/maps?q=Hobart+CBD+Tasmania+Australia&t=&z=15&ie=UTF8&iwloc=B&output=embed',
+    'https://maps.google.com/maps?q=Mount+Nelson+Hobart+Tasmania+Australia&t=&z=15&ie=UTF8&iwloc=B&output=embed',
 }
 
 export interface OpeningHour {
@@ -30,10 +30,9 @@ export interface OpeningHour {
 }
 
 export const openingHours: OpeningHour[] = [
-  { days: 'Mon – Wed', hours: '9:00 AM – 6:00 PM' },
-  { days: 'Thu – Fri', hours: '9:00 AM – 7:00 PM' },
-  { days: 'Saturday',  hours: '8:00 AM – 5:00 PM' },
-  { days: 'Sunday',    hours: '10:00 AM – 4:00 PM' },
+  { days: 'Mon – Tue', hours: '8:00 AM – 10:00 PM' },
+  { days: 'Wed – Sat', hours: '5:50 PM – 10:00 PM' },
+  { days: 'Sunday',    hours: '3:50 PM – 10:00 PM' },
 ]
 
 // Replace these with real client testimonials before launch

@@ -8,15 +8,32 @@ const geist = Geist({
 })
 
 export const metadata: Metadata = {
-  title: 'MANA FADE STUDIO | Premium Barber Shop in Hobart',
+  title: 'Mana Fade Studio | Premium Barber Shop in Mount Nelson Hobart Tasmania',
   description:
-    'Premium barber studio in Hobart specialising in fades, beard trims and modern men\'s grooming.',
+    "Premium barber shop in Mount Nelson, Hobart Tasmania specialising in fades, skin fades, beard trims and modern men's grooming. Book online today.",
+  keywords: [
+    'barber Hobart',
+    'barber shop Hobart',
+    'fade haircut Hobart',
+    'skin fade Hobart',
+    'mens haircut Hobart',
+    'beard trim Hobart',
+    'Mount Nelson barber',
+    'Tasmania barber shop',
+  ],
   openGraph: {
-    title: 'MANA FADE STUDIO | Premium Barber Shop in Hobart',
+    title: 'Mana Fade Studio | Premium Barber Shop in Mount Nelson Hobart Tasmania',
     description:
-      'Premium barber studio in Hobart specialising in fades, beard trims and modern men\'s grooming.',
+      "Premium barber shop in Mount Nelson, Hobart Tasmania specialising in fades, skin fades, beard trims and modern men's grooming.",
     type: 'website',
     locale: 'en_AU',
+    siteName: 'Mana Fade Studio',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Mana Fade Studio | Premium Barber Shop in Hobart Tasmania',
+    description:
+      "Premium barber shop in Mount Nelson, Hobart. Skin fades, beard trims and modern men's grooming.",
   },
 }
 
@@ -24,14 +41,48 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'BarberShop',
   name: 'Mana Fade Studio',
-  description: 'Premium barber studio in Hobart, Tasmania specialising in fades, beard trims and modern men\'s grooming.',
+  description:
+    "Premium barber shop in Mount Nelson, Hobart Tasmania specialising in skin fades, beard trims and modern men's grooming.",
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Hobart',
+    streetAddress: 'Olinda Grove',
+    addressLocality: 'Mount Nelson',
     addressRegion: 'TAS',
+    postalCode: '7007',
     addressCountry: 'AU',
   },
+  telephone: '+61400000000',
+  email: 'hello@manafadestudio.com.au',
   priceRange: '$$',
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday'],
+      opens: '08:00',
+      closes: '22:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '17:50',
+      closes: '22:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Sunday'],
+      opens: '15:50',
+      closes: '22:00',
+    },
+  ],
+  areaServed: [
+    'Mount Nelson',
+    'Sandy Bay',
+    'North Hobart',
+    'South Hobart',
+    'Kingston',
+    'Hobart',
+    'Tasmania',
+  ],
 }
 
 export default function RootLayout({

@@ -55,9 +55,9 @@ const reasons: Reason[] = [
         <circle cx="12" cy="9" r="2.5" />
       </svg>
     ),
-    heading: 'Hobart CBD Location',
+    heading: 'Mount Nelson, Hobart',
     description:
-      'Conveniently located in the heart of Hobart — easy to reach whether you live locally or are visiting Tasmania.',
+      'Located in Mount Nelson, Hobart — easy to reach from Sandy Bay, Kingston, South Hobart, North Hobart and across Tasmania.',
   },
   {
     id: 'experience',
