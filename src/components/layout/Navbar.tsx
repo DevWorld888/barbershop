@@ -48,9 +48,9 @@ export default function Navbar() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo/logobarber1.png"
+            src="/logo/logo.png"
             alt="Mana Fade Studio"
-            className="h-12 sm:h-14 md:h-16 w-auto object-contain select-none transition-[filter,opacity] duration-200 group-hover:brightness-110 group-hover:opacity-90"
+            className="h-8 sm:h-10 md:h-16 w-auto object-contain select-none transition-[filter,opacity] duration-200 group-hover:brightness-110 group-hover:opacity-90"
             draggable={false}
           />
         </Link>
