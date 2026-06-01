@@ -1,6 +1,6 @@
 
 // Replace with the real Fresha URL before launch
-export const FRESHA_BOOKING_URL = 'https://app.squareup.com/appointments/buyer/widget/drg7qw3fvbvs56/LWVD7Q7DPDMZC'
+export const FRESHA_BOOKING_URL = 'https://app.squareup.com/appointments/book/e3yygld17ou9he/L2WRBW1XGTBJ4/start'
 
 export const BOOKING_URL = FRESHA_BOOKING_URL
 
