@@ -51,8 +51,8 @@ const localBusinessSchema = {
     postalCode: '7007',
     addressCountry: 'AU',
   },
-  telephone: '+61400000000',
-  email: 'hello@manafadestudio.com.au',
+  telephone: '+61402573920',
+  email: 'manafadestudio@gmail.com',
   priceRange: '$$',
   openingHoursSpecification: [
     {

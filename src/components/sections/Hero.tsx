@@ -23,7 +23,7 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
       {/* Background photo — not animated to preserve LCP */}
       <Image
-        src="/hero/premium-barber-hobart-tasmania.webp"
+        src="/hero/premium-barber-hobart-tasmania-hobart.webp"
         alt="Premium barber shop skin fade haircut in Mount Nelson Hobart Tasmania"
         fill
         priority

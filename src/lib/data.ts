@@ -4,7 +4,7 @@ export const FRESHA_BOOKING_URL = 'https://app.squareup.com/appointments/book/e3
 
 export const BOOKING_URL = FRESHA_BOOKING_URL
 
-export const WHATSAPP_NUMBER = '61412053218'
+export const WHATSAPP_NUMBER = '61402573920'
 
 export const WHATSAPP_MESSAGE =
   "Hi 👋 Thanks for contacting Mana Fade Studio.\n\n" +
@@ -16,8 +16,8 @@ export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURICo
 // Update all fields below with real business details before launch
 export const businessInfo = {
   address: 'Olinda Grove, Mount Nelson TAS 7007, Australia',
-  phone: '+61 400 000 000',
-  email: 'hello@manafadestudio.com.au',
+  phone: '+61 402 573 920',
+  email: 'manafadestudio@gmail.com',
   instagram: 'https://instagram.com/manafadestudio',
   googleMapsUrl: 'https://maps.google.com/?q=Mount+Nelson+Hobart+Tasmania+Australia',
   mapEmbedUrl:
