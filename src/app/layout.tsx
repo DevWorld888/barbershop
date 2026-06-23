@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
-import { Geist } from 'next/font/google'
+import { Geist, Cinzel } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 
 const geist = Geist({
@@ -7,6 +8,16 @@ const geist = Geist({
   subsets: ['latin'],
 })
 
+export const cinzel = Cinzel({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-cinzel",
+});
+
+const nathanScript = localFont({
+  src: '../assets/fonts/Nathan Script OTF.otf',
+  variable: '--font-nathan-script',
+});
 export const metadata: Metadata = {
   title: 'Mana Fade Studio | Premium Barber Shop in Mount Nelson Hobart Tasmania',
   description:
@@ -91,7 +102,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en-AU" className={`${geist.variable} h-full`}>
+    <html lang="en-AU" className={`${geist.variable} h-full ${cinzel.variable} ${nathanScript.variable}`}>
       <head>
         <script
           type="application/ld+json"

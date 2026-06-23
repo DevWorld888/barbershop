@@ -34,7 +34,7 @@ export default function ServiceCard({ service }: { service: Service }) {
       />
 
       {/* ── Image ──────────────────────────────────────────────────── */}
-      <div className="relative h-56 overflow-hidden">
+      <div className="relative h-62 overflow-hidden">
         <motion.div
           className="absolute inset-0"
           variants={zoom}
@@ -52,7 +52,7 @@ export default function ServiceCard({ service }: { service: Service }) {
 
         {/* Gradient for text readability */}
         <div
-          className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/30 to-transparent pointer-events-none"
+          className="absolute bottom-0 inset-x-0 h-1/3 bg-gradient-to-t from-zinc-950 to-transparent pointer-events-none"
           aria-hidden="true"
         />
 

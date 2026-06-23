@@ -119,7 +119,7 @@ export const galleryImages: GalleryImage[] = [
     alt: 'Classic haircut and style — barbershop Hobart Tasmania',
   },
   {
-    src: '/gallery/haircut-lines-barber-hobart.webp',
+    src: '/gallery/haircut-lines-barber-hobart-.webp',
     alt: "Haircut with lines at Mana Fade Studio Hobart",
   },
   {
@@ -207,7 +207,7 @@ export const services: Service[] = [
     title: 'Scissor Haircut',
     duration: '25 min',
     price: '$35',
-    image: '/gallery/haircut-lines-barber-hobart.webp',
+    image: '/gallery/haircut-lines-barber-hobart-.webp',
     imagePosition: '50% 25%',
   },
   {

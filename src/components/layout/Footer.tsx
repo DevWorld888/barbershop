@@ -25,7 +25,7 @@ export default function Footer() {
                   Mana Fade
                 </span>
                 <span className="text-gold-500 text-[10px] uppercase tracking-[0.3em]">
-                  Studio
+                  Home Studio
                 </span>
               </Link>
               <p className="text-zinc-400 text-sm leading-relaxed mb-7 max-w-xs">

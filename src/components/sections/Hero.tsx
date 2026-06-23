@@ -52,9 +52,9 @@ export default function Hero() {
           className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-6 max-w-2xl"
           {...fadeUp(0.25, 28)}
         >
-          Premium Barber Shop
+          <span className="font-[family-name:var(--font-nathan-script)]">Private Barber Studio</span>
           <br />
-          in Hobart Tasmania
+          <span className="font-[family-name:var(--font-nathan-script)]">in Hobart Tasmania</span>
         </motion.h1>
 
         <motion.p
