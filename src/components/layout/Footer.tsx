@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import Reveal from '@/components/animations/Reveal'
 import { businessInfo, FRESHA_BOOKING_URL } from '@/lib/data'
 
@@ -24,7 +24,7 @@ export default function Footer() {
                 <span className="text-white font-bold text-xl uppercase tracking-[0.15em]">
                   Mana Fade
                 </span>
-                <span className="text-gold-500 text-[10px] uppercase tracking-[0.3em]">
+                <span className="text-silver-500 text-[10px] uppercase tracking-[0.3em]">
                   Home Studio
                 </span>
               </Link>
@@ -36,7 +36,7 @@ export default function Footer() {
                 href={FRESHA_BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-gold-500 text-black hover:bg-gold-400 text-xs px-6 py-3 font-semibold uppercase tracking-widest transition-colors"
+                className="inline-flex items-center justify-center bg-silver-500 text-black hover:bg-silver-400 text-xs px-6 py-3 font-semibold uppercase tracking-widest transition-colors"
               >
                 Book Now
               </a>
@@ -52,7 +52,7 @@ export default function Footer() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      className="text-zinc-400 text-sm hover:text-gold-500 transition-colors"
+                      className="text-zinc-400 text-sm hover:text-silver-500 transition-colors"
                     >
                       {link.label}
                     </a>
@@ -89,7 +89,7 @@ export default function Footer() {
                     href={businessInfo.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-zinc-400 text-sm hover:text-gold-500 transition-colors"
+                    className="text-zinc-400 text-sm hover:text-silver-500 transition-colors"
                   >
                     @manafadestudio
                   </a>

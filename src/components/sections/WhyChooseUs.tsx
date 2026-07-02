@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+﻿import type { ReactNode } from 'react'
 import Reveal from '@/components/animations/Reveal'
 
 interface Reason {
@@ -94,13 +94,13 @@ export default function WhyChooseUs() {
         {/* Section header */}
         <Reveal>
           <div className="mb-14 sm:mb-16">
-            <p className="text-gold-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
+            <p className="text-silver-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
               Why Us
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
               Why Choose Mana Fade
             </h2>
-            <div className="w-12 h-px bg-gold-500" aria-hidden="true" />
+            <div className="w-12 h-px bg-silver-500" aria-hidden="true" />
           </div>
         </Reveal>
 
@@ -110,7 +110,7 @@ export default function WhyChooseUs() {
             <Reveal key={reason.id} delay={i * 0.09}>
               <div className="flex gap-8">
                 {/* Icon */}
-                <div className="shrink-0 mt-1 w-12 h-12 border border-gold-600 flex items-center justify-center text-gold-500">
+                <div className="shrink-0 mt-1 w-12 h-12 border border-silver-700 flex items-center justify-center text-silver-500">
                   {reason.icon}
                 </div>
                 {/* Text */}

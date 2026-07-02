@@ -1,4 +1,4 @@
-import Reveal from '@/components/animations/Reveal'
+﻿import Reveal from '@/components/animations/Reveal'
 import { businessInfo, openingHours } from '@/lib/data'
 
 interface ContactItemProps {
@@ -10,7 +10,7 @@ interface ContactItemProps {
 function ContactItem({ icon, label, children }: ContactItemProps) {
   return (
     <div className="flex gap-5">
-      <div className="shrink-0 mt-0.5 text-gold-500">{icon}</div>
+      <div className="shrink-0 mt-0.5 text-silver-500">{icon}</div>
       <div>
         <p className="text-zinc-500 text-xs uppercase tracking-widest mb-1">{label}</p>
         {children}
@@ -27,13 +27,13 @@ export default function LocationContact() {
         {/* Section header */}
         <Reveal>
           <div className="mb-14 sm:mb-16">
-            <p className="text-gold-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
+            <p className="text-silver-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
               Location & Contact
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
               Find Us
             </h2>
-            <div className="w-12 h-px bg-gold-500" aria-hidden="true" />
+            <div className="w-12 h-px bg-silver-500" aria-hidden="true" />
           </div>
         </Reveal>
 
@@ -59,7 +59,7 @@ export default function LocationContact() {
                     href={businessInfo.googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gold-500 text-xs uppercase tracking-widest hover:text-gold-400 transition-colors mt-1.5 inline-block"
+                    className="text-silver-500 text-xs uppercase tracking-widest hover:text-silver-400 transition-colors mt-1.5 inline-block"
                   >
                     Get Directions &rarr;
                   </a>
@@ -75,7 +75,7 @@ export default function LocationContact() {
                 >
                   <a
                     href={`tel:${businessInfo.phone}`}
-                    className="text-white text-sm hover:text-gold-500 transition-colors"
+                    className="text-white text-sm hover:text-silver-500 transition-colors"
                   >
                     {businessInfo.phone}
                   </a>
@@ -92,7 +92,7 @@ export default function LocationContact() {
                 >
                   <a
                     href={`mailto:${businessInfo.email}`}
-                    className="text-white text-sm hover:text-gold-500 transition-colors"
+                    className="text-white text-sm hover:text-silver-500 transition-colors"
                   >
                     {businessInfo.email}
                   </a>
@@ -112,7 +112,7 @@ export default function LocationContact() {
                     href={businessInfo.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white text-sm hover:text-gold-500 transition-colors"
+                    className="text-white text-sm hover:text-silver-500 transition-colors"
                   >
                     @manafadestudio
                   </a>

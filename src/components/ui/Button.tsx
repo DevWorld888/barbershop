@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -27,8 +27,8 @@ export default function Button({
     'inline-flex items-center justify-center text-sm font-semibold uppercase tracking-widest px-8 py-4 transition-colors'
 
   const variants: Record<Variant, string> = {
-    primary: 'bg-gold-500 text-black hover:bg-gold-400',
-    outline: 'border border-zinc-600 text-white hover:border-gold-500 hover:text-gold-500',
+    primary: 'bg-silver-500 text-black hover:bg-silver-400',
+    outline: 'border border-zinc-600 text-white hover:border-silver-500 hover:text-silver-500',
   }
 
   const classes = `${base} ${variants[variant]} ${className}`

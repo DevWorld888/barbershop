@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { reviews } from '@/lib/data'
@@ -18,7 +18,7 @@ function StarRating({ rating }: { rating: number }) {
           fill={i < rating ? 'currentColor' : 'none'}
           stroke="currentColor"
           strokeWidth="1.5"
-          className="text-gold-500"
+          className="text-silver-500"
           aria-hidden="true"
         >
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
@@ -41,13 +41,13 @@ export default function Reviews() {
         {/* Section header */}
         <Reveal>
           <div className="mb-14 sm:mb-16">
-            <p className="text-gold-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
+            <p className="text-silver-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
               Client Reviews
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
               What Clients Say
             </h2>
-            <div className="w-12 h-px bg-gold-500" aria-hidden="true" />
+            <div className="w-12 h-px bg-silver-500" aria-hidden="true" />
           </div>
         </Reveal>
 
@@ -77,7 +77,7 @@ export default function Reviews() {
 
                 {/* Attribution */}
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-px bg-gold-500" aria-hidden="true" />
+                  <div className="w-8 h-px bg-silver-500" aria-hidden="true" />
                   <div>
                     <p className="text-white text-sm font-semibold">{review.name}</p>
                     <p className="text-zinc-500 text-xs">
@@ -95,7 +95,7 @@ export default function Reviews() {
           {/* Prev */}
           <button
             onClick={prev}
-            className="w-11 h-11 border border-zinc-700 flex items-center justify-center text-white hover:border-gold-500 hover:text-gold-500 transition-colors"
+            className="w-11 h-11 border border-zinc-700 flex items-center justify-center text-white hover:border-silver-500 hover:text-silver-500 transition-colors"
             aria-label="Previous review"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -113,7 +113,7 @@ export default function Reviews() {
                 aria-selected={i === current}
                 aria-label={`Review ${i + 1}`}
                 className={`h-1.5 rounded-full transition-all duration-300 ${
-                  i === current ? 'bg-gold-500 w-6' : 'bg-zinc-700 w-1.5 hover:bg-zinc-500'
+                  i === current ? 'bg-silver-500 w-6' : 'bg-zinc-700 w-1.5 hover:bg-zinc-500'
                 }`}
               />
             ))}
@@ -122,7 +122,7 @@ export default function Reviews() {
           {/* Next */}
           <button
             onClick={next}
-            className="w-11 h-11 border border-zinc-700 flex items-center justify-center text-white hover:border-gold-500 hover:text-gold-500 transition-colors"
+            className="w-11 h-11 border border-zinc-700 flex items-center justify-center text-white hover:border-silver-500 hover:text-silver-500 transition-colors"
             aria-label="Next review"
           >
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -140,7 +140,7 @@ export default function Reviews() {
             href={GOOGLE_REVIEW_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 border border-zinc-700 text-white text-sm font-semibold uppercase tracking-widest px-7 py-3.5 hover:border-gold-500 hover:text-gold-500 transition-colors"
+            className="inline-flex items-center gap-3 border border-zinc-700 text-white text-sm font-semibold uppercase tracking-widest px-7 py-3.5 hover:border-silver-500 hover:text-silver-500 transition-colors"
           >
             Leave a Google Review
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+﻿import Image from 'next/image'
 import Reveal from '@/components/animations/Reveal'
 import { galleryImages } from '@/lib/data'
 
@@ -10,13 +10,13 @@ export default function Gallery() {
         {/* Section header */}
         <Reveal>
           <div className="mb-14 sm:mb-16">
-            <p className="text-gold-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
+            <p className="text-silver-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
               Our Work
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
               The Gallery
             </h2>
-            <div className="w-12 h-px bg-gold-500" aria-hidden="true" />
+            <div className="w-12 h-px bg-silver-500" aria-hidden="true" />
           </div>
         </Reveal>
 
@@ -46,7 +46,7 @@ export default function Gallery() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-400 text-sm uppercase tracking-widest hover:text-gold-500 transition-colors"
+              className="text-zinc-400 text-sm uppercase tracking-widest hover:text-silver-500 transition-colors"
             >
               Follow us on Instagram &rarr;
             </a>

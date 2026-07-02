@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Image from 'next/image'
 import { motion } from 'framer-motion'
@@ -18,7 +18,7 @@ const zoom = {
 export default function ServiceCard({ service }: { service: Service }) {
   return (
     <motion.article
-      className="group relative flex flex-col h-full overflow-hidden bg-zinc-950 border border-zinc-800 hover:border-gold-500/40 hover:shadow-[0_12px_40px_rgba(212,175,55,0.1)] transition-[border-color,box-shadow] duration-300 cursor-pointer"
+      className="group relative flex flex-col h-full overflow-hidden bg-zinc-950 border border-zinc-800 hover:border-silver-500/40 hover:shadow-[0_12px_40px_rgba(192,192,192,0.1)] transition-[border-color,box-shadow] duration-300 cursor-pointer"
       initial="rest"
       whileHover="hover"
       variants={lift}
@@ -30,7 +30,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`Book ${service.title} at Mana Fade Studio Hobart`}
-        className="absolute inset-0 z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-gold-500 focus-visible:outline-offset-[-2px]"
+        className="absolute inset-0 z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-silver-500 focus-visible:outline-offset-[-2px]"
       />
 
       {/* ── Image ──────────────────────────────────────────────────── */}
@@ -70,9 +70,9 @@ export default function ServiceCard({ service }: { service: Service }) {
           {service.title}
         </h3>
 
-        {/* Animated gold rule */}
+        {/* Animated silver rule */}
         <div
-          className="h-px bg-gold-500/60 group-hover:bg-gold-500 w-7 group-hover:w-10 transition-all duration-300"
+          className="h-px bg-silver-500/60 group-hover:bg-silver-500 w-7 group-hover:w-10 transition-all duration-300"
           aria-hidden="true"
         />
 
@@ -83,7 +83,7 @@ export default function ServiceCard({ service }: { service: Service }) {
               {service.priceLabel}
             </span>
           )}
-          <span className="text-gold-500 font-bold text-[1.6rem] leading-none tabular-nums">
+          <span className="text-silver-500 font-bold text-[1.6rem] leading-none tabular-nums">
             {service.price}
           </span>
         </div>
@@ -106,7 +106,7 @@ export default function ServiceCard({ service }: { service: Service }) {
           <span className="text-zinc-300 group-hover:text-white text-[11px] font-semibold uppercase tracking-[0.18em] transition-colors duration-200">
             Book Now
           </span>
-          <span className="text-gold-500 text-sm leading-none" aria-hidden="true">
+          <span className="text-silver-500 text-sm leading-none" aria-hidden="true">
             →
           </span>
         </div>

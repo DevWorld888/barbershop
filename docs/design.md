@@ -38,7 +38,7 @@ Primary:
 
 Accent:
 
-* Gold
+* Metallic silver
 
 Avoid:
 

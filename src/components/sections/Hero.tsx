@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Image from 'next/image'
 import { motion, useReducedMotion } from 'framer-motion'
@@ -37,12 +37,12 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      {/* Gold vertical accent bar */}
-      <div className="absolute top-0 bottom-0 left-0 w-1 bg-gold-500" aria-hidden="true" />
+      {/* Silver vertical accent bar */}
+      <div className="absolute top-0 bottom-0 left-0 w-1 bg-silver-500" aria-hidden="true" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-32 sm:py-40 w-full">
         <motion.p
-          className="text-gold-500 text-xs font-medium uppercase tracking-[0.3em] mb-6"
+          className="text-silver-500 text-xs font-medium uppercase tracking-[0.3em] mb-6"
           {...fadeUp(0.1, 16)}
         >
           Mount Nelson, Hobart, Tasmania

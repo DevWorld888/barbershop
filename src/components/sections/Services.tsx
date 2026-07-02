@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -87,13 +87,13 @@ export default function Services() {
         {/* Section header */}
         <Reveal>
           <div className="mb-10 sm:mb-12">
-            <p className="text-gold-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
+            <p className="text-silver-500 text-xs font-medium uppercase tracking-[0.3em] mb-4">
               What We Offer
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
               Our Services
             </h2>
-            <div className="w-12 h-px bg-gold-500" aria-hidden="true" />
+            <div className="w-12 h-px bg-silver-500" aria-hidden="true" />
           </div>
         </Reveal>
 
@@ -115,8 +115,8 @@ export default function Services() {
                     className={[
                       'px-5 py-2.5 text-xs font-semibold uppercase tracking-widest border whitespace-nowrap transition-all duration-200',
                       isActive
-                        ? 'border-gold-500 bg-gold-500 text-black shadow-[0_0_18px_rgba(212,175,55,0.32)]'
-                        : 'border-zinc-700 bg-transparent text-zinc-400 hover:border-gold-500/50 hover:text-white',
+                        ? 'border-silver-500 bg-silver-500 text-black shadow-[0_0_18px_rgba(192,192,192,0.32)]'
+                        : 'border-zinc-700 bg-transparent text-zinc-400 hover:border-silver-500/50 hover:text-white',
                     ].join(' ')}
                   >
                     {cat}
@@ -152,7 +152,7 @@ export default function Services() {
           <div className="mt-10 flex justify-center">
             <button
               onClick={() => setExpanded((prev) => !prev)}
-              className="inline-flex items-center justify-center border border-gold-500/60 text-gold-500 hover:bg-gold-500 hover:text-black text-sm px-8 py-4 font-semibold uppercase tracking-widest transition-colors duration-200"
+              className="inline-flex items-center justify-center border border-silver-500/60 text-silver-500 hover:bg-silver-500 hover:text-black text-sm px-8 py-4 font-semibold uppercase tracking-widest transition-colors duration-200"
             >
               {expanded ? 'Show Less' : 'View All Services'}
             </button>
@@ -166,7 +166,7 @@ export default function Services() {
               href={FRESHA_BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-gold-500 text-black hover:bg-gold-400 text-sm px-8 py-4 font-semibold uppercase tracking-widest transition-colors"
+              className="inline-flex items-center justify-center bg-silver-500 text-black hover:bg-silver-400 text-sm px-8 py-4 font-semibold uppercase tracking-widest transition-colors"
             >
               Book Your Appointment
             </a>

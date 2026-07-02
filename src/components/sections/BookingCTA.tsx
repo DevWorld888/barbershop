@@ -1,9 +1,9 @@
-import Reveal from '@/components/animations/Reveal'
+﻿import Reveal from '@/components/animations/Reveal'
 import BookingTrigger from '@/components/ui/BookingTrigger'
 
 export default function BookingCTA() {
   return (
-    <section className="bg-gold-500 py-24 sm:py-32">
+    <section className="bg-silver-500 py-24 sm:py-32">
       <Reveal>
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
 

@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
@@ -74,7 +74,7 @@ export default function Navbar() {
           href={FRESHA_BOOKING_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center justify-center bg-gold-500 text-black text-sm font-semibold uppercase tracking-widest px-6 py-2.5 hover:bg-gold-400 transition-colors duration-200"
+          className="hidden md:inline-flex items-center justify-center bg-silver-500 text-black text-sm font-semibold uppercase tracking-widest px-6 py-2.5 hover:bg-silver-400 transition-colors duration-200"
         >
           Book Now
         </a>
@@ -129,7 +129,7 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="mt-4 w-full flex items-center justify-center bg-gold-500 text-black text-sm font-semibold uppercase tracking-widest py-3 hover:bg-gold-400 transition-colors duration-200"
+                className="mt-4 w-full flex items-center justify-center bg-silver-500 text-black text-sm font-semibold uppercase tracking-widest py-3 hover:bg-silver-400 transition-colors duration-200"
               >
                 Book Now
               </a>

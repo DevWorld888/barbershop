@@ -1,21 +1,21 @@
-'use client'
+﻿'use client'
 
 import { type ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import { useBooking } from '@/context/booking'
 
 // Variants:
-//   primary    — gold bg, black text, standard size  (Hero, Services, default)
-//   primary-sm — gold bg, black text, compact size   (Footer)
+//   primary    — silver bg, black text, standard size  (Hero, Services, default)
+//   primary-sm — silver bg, black text, compact size   (Footer)
 //   outline    — transparent with border             (secondary actions)
 //   dark       — black bg, white text               (BookingCTA section)
 
 type TriggerVariant = 'primary' | 'primary-sm' | 'outline' | 'dark'
 
 const VARIANT_STYLES: Record<TriggerVariant, string> = {
-  'primary':    'bg-gold-500 text-black hover:bg-gold-400 text-sm px-8 py-4',
-  'primary-sm': 'bg-gold-500 text-black hover:bg-gold-400 text-xs px-6 py-3',
-  'outline':    'border border-zinc-600 text-white hover:border-gold-500 hover:text-gold-500 text-sm px-8 py-4',
+  'primary':    'bg-silver-500 text-black hover:bg-silver-400 text-sm px-8 py-4',
+  'primary-sm': 'bg-silver-500 text-black hover:bg-silver-400 text-xs px-6 py-3',
+  'outline':    'border border-zinc-600 text-white hover:border-silver-500 hover:text-silver-500 text-sm px-8 py-4',
   'dark':       'bg-black text-white hover:bg-zinc-900 text-sm px-10 py-4',
 }
 
@@ -43,10 +43,10 @@ export default function BookingTrigger({
     open()
   }
 
-  const isGold = variant === 'primary' || variant === 'primary-sm'
+  const isSilver = variant === 'primary' || variant === 'primary-sm'
 
-  const hoverEffect = isGold
-    ? { scale: 1.03, boxShadow: '0 0 24px rgba(201, 168, 76, 0.4)' }
+  const hoverEffect = isSilver
+    ? { scale: 1.03, boxShadow: '0 0 24px rgba(192, 192, 192, 0.4)' }
     : { scale: 1.02 }
 
   return (

@@ -50,7 +50,7 @@ Style:
 * premium dark barbershop aesthetic
 * black background
 * charcoal sections
-* gold accent colors
+* metallic silver accent colors
 * white typography
 
 UI:

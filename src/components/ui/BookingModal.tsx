@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
@@ -115,9 +115,9 @@ function ModalOverlay({ onClose }: { onClose: () => void }) {
         exit={{ y: 64, scale: 0.97, opacity: 0 }}
         transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
       >
-        {/* Gold top accent */}
+        {/* Silver top accent */}
         <div
-          className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-gold-500 to-transparent"
+          className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-silver-500 to-transparent"
           aria-hidden="true"
         />
 
@@ -129,7 +129,7 @@ function ModalOverlay({ onClose }: { onClose: () => void }) {
         {/* Header */}
         <div className="px-6 pt-5 sm:pt-8 pb-6">
           <div className="flex items-start justify-between gap-4 mb-4">
-            <p className="text-gold-500 text-[10px] font-semibold uppercase tracking-[0.28em] pt-1">
+            <p className="text-silver-500 text-[10px] font-semibold uppercase tracking-[0.28em] pt-1">
               Mana Fade Studio · Hobart
             </p>
             <button
@@ -158,7 +158,7 @@ function ModalOverlay({ onClose }: { onClose: () => void }) {
           <ul className="space-y-3.5" aria-label="What to expect">
             {BENEFITS.map((benefit) => (
               <li key={benefit} className="flex items-start gap-3 text-zinc-300 text-sm">
-                <span className="text-gold-500">
+                <span className="text-silver-500">
                   <CheckIcon />
                 </span>
                 {benefit}
@@ -174,7 +174,7 @@ function ModalOverlay({ onClose }: { onClose: () => void }) {
             whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.99 }}
             transition={{ duration: 0.12 }}
-            className="w-full py-[15px] bg-gold-500 text-black text-[13px] font-semibold uppercase tracking-[0.13em] hover:bg-gold-400 transition-colors duration-200"
+            className="w-full py-[15px] bg-silver-500 text-black text-[13px] font-semibold uppercase tracking-[0.13em] hover:bg-silver-400 transition-colors duration-200"
           >
             Continue to Online Booking
           </motion.button>
@@ -185,7 +185,7 @@ function ModalOverlay({ onClose }: { onClose: () => void }) {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-zinc-500 underline underline-offset-2 hover:text-gold-500 transition-colors duration-150"
+              className="text-zinc-500 underline underline-offset-2 hover:text-silver-500 transition-colors duration-150"
             >
               Chat with us on WhatsApp
             </a>
