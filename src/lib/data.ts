@@ -1,6 +1,6 @@
 
 // Replace with the real Fresha URL before launch
-export const FRESHA_BOOKING_URL = 'https://bookeo.com/manafadestudio'
+export const FRESHA_BOOKING_URL = 'https://bookeo.com/manafadehomestudio'
 
 export const BOOKING_URL = FRESHA_BOOKING_URL
 
