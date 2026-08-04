@@ -31,16 +31,20 @@ export default function Hero() {
         sizes="100vw"
       />
 
-      {/* Gradient overlay */}
-      <div
-        className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"
-        aria-hidden="true"
-      />
+      {/* Dark overlay — even vignette since content is now centered, not left-anchored */}
+      <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
 
-      {/* Silver vertical accent bar */}
-      <div className="absolute top-0 bottom-0 left-0 w-1 bg-silver-500" aria-hidden="true" />
+      <div className="relative z-10 max-w-3xl mx-auto px-6 sm:px-8 py-32 sm:py-40 w-full flex flex-col items-center text-center">
+        <motion.div className="mb-8" {...fadeUp(0, 20)}>
+          <Image
+            src="/logo/logo1.png"
+            alt="Mana Home Base Studio barber logo"
+            width={1254}
+            height={1254}
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 object-contain"
+          />
+        </motion.div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-32 sm:py-40 w-full">
         <motion.p
           className="text-silver-500 text-xs font-medium uppercase tracking-[0.3em] mb-6"
           {...fadeUp(0.1, 16)}
@@ -49,16 +53,14 @@ export default function Hero() {
         </motion.p>
 
         <motion.h1
-          className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-6 max-w-2xl"
+          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight mb-6 max-w-2xl"
           {...fadeUp(0.25, 28)}
         >
-          <span className="font-[family-name:var(--font-nathan-script)]">Private Barber Studio</span>
-          <br />
-          <span className="font-[family-name:var(--font-nathan-script)]">in Hobart Tasmania</span>
+          Private Barber Studio in Hobart Tasmania
         </motion.h1>
 
         <motion.p
-          className="text-zinc-400 text-lg sm:text-xl max-w-xl leading-relaxed mb-10"
+          className="text-zinc-400 text-lg sm:text-xl max-w-xl mx-auto leading-relaxed mb-10"
           {...fadeUp(0.45, 16)}
         >
           Sharp skin fades, beard trims and modern men&apos;s haircuts —
@@ -66,7 +68,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.div
-          className="flex flex-col sm:flex-row gap-4"
+          className="flex flex-col sm:flex-row gap-4 justify-center"
           {...fadeUp(0.6, 16)}
         >
           <BookingTrigger variant="primary">Book Now</BookingTrigger>
@@ -74,7 +76,7 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          className="mt-12 flex items-center gap-2 text-zinc-500 text-sm"
+          className="mt-12 flex items-center justify-center gap-2 text-zinc-500 text-sm"
           {...fadeUp(0.75, 0)}
         >
           <svg
@@ -95,6 +97,18 @@ export default function Hero() {
           </svg>
           <span>Mount Nelson, Hobart, Tasmania, Australia</span>
         </motion.div>
+      </div>
+
+      {/* Wave divider — fills with Services bg colour so the edge is curved */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden z-20" aria-hidden="true">
+        <svg
+          viewBox="0 0 1440 80"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-16 sm:h-20 block"
+          preserveAspectRatio="none"
+        >
+          <path d="M0,40 C360,120 1080,-40 1440,40 L1440,120 L0,120 Z" fill="#18181b" />
+        </svg>
       </div>
     </section>
   )

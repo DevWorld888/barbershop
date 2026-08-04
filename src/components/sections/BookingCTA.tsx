@@ -3,7 +3,7 @@ import BookingTrigger from '@/components/ui/BookingTrigger'
 
 export default function BookingCTA() {
   return (
-    <section className="bg-silver-500 py-24 sm:py-32">
+    <section className="relative bg-silver-500 py-24 sm:py-32 overflow-hidden">
       <Reveal>
         <div className="max-w-3xl mx-auto px-6 sm:px-8 text-center">
 
@@ -38,6 +38,18 @@ export default function BookingCTA() {
 
         </div>
       </Reveal>
+
+      {/* Wave divider — fills with Location section bg colour so the edge is curved */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden z-20" aria-hidden="true">
+        <svg
+          viewBox="0 0 1440 80"
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-full h-16 sm:h-20 block"
+          preserveAspectRatio="none"
+        >
+          <path d="M0,40 C360,120 1080,-40 1440,40 L1440,120 L0,120 Z" fill="#18181b" />
+        </svg>
+      </div>
     </section>
   )
 }

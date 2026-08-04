@@ -37,7 +37,7 @@ export default function Navbar() {
       transition={{ duration: 0.5, ease }}
     >
       <nav
-        className="max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between h-16 sm:h-20"
+        className="max-w-6xl mx-auto px-6 sm:px-8 flex items-center justify-between h-24 sm:h-24"
         aria-label="Main navigation"
       >
         {/* Logo — image only, proportions preserved */}
@@ -48,9 +48,9 @@ export default function Navbar() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo/logo.png"
+            src="/logo/logo1.png"
             alt="Mana Fade Studio"
-            className="h-8 sm:h-10 md:h-16 w-auto object-contain select-none transition-[filter,opacity] duration-200 group-hover:brightness-110 group-hover:opacity-90"
+            className="h-24 sm:h-16 md:h-24 w-auto object-contain select-none transition-[filter,opacity] duration-200 group-hover:brightness-110 group-hover:opacity-90"
             draggable={false}
           />
         </Link>

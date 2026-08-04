@@ -21,7 +21,7 @@ function ContactItem({ icon, label, children }: ContactItemProps) {
 
 export default function LocationContact() {
   return (
-    <section id="contact" className="bg-zinc-900 py-24 sm:py-32">
+    <section id="contact" className="relative -mt-px bg-zinc-900 py-24 sm:py-32">
       <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
 
         {/* Section header */}
