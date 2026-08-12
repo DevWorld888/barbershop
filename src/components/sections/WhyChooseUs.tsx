@@ -16,9 +16,9 @@ const reasons: Reason[] = [
         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
       </svg>
     ),
-    heading: 'Colombian Expertise',
+    heading: 'Hobart\'s Fade Specialist',
     description:
-      'Trained in Colombian barbering — a tradition known globally for sharp fades, clean lines, and precision styling techniques.',
+      'Sharp fades, clean lines, and precision barbering for men in Hobart — built for modern styles and a sharp, confident finish.',
   },
   {
     id: 'precision',
