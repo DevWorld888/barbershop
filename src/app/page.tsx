@@ -2,8 +2,9 @@ import { BookingProvider } from '@/context/booking'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import Hero from '@/components/sections/Hero'
+import CharityPromo from '@/components/sections/CharityPromo'
 import Services from '@/components/sections/Services'
-import SpecialOffer from '@/components/sections/SpecialOffer'
+// import SpecialOffer from '@/components/sections/SpecialOffer'
 import Gallery from '@/components/sections/Gallery'
 import WhyChooseUs from '@/components/sections/WhyChooseUs'
 import Reviews from '@/components/sections/Reviews'
@@ -18,8 +19,9 @@ export default function HomePage() {
       <Navbar />
       <main>
         <Hero />
+        <CharityPromo />
         <Services />
-        <SpecialOffer />
+        {/* <SpecialOffer /> */}
         <Gallery />
         <WhyChooseUs />
         <Reviews />

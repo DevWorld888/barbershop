@@ -132,7 +132,7 @@ export default function Reviews() {
         </div>
 
         {/* Google review CTA */}
-        <div className="mt-14 text-center">
+        {/* <div className="mt-14 text-center">
           <p className="text-zinc-500 text-sm mb-5">
             Visited Diego&apos;s? Help other Hobart locals find their new barber.
           </p>
@@ -147,7 +147,7 @@ export default function Reviews() {
               <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </a>
-        </div>
+        </div> */}
 
       </div>
     </section>

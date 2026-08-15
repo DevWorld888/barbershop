@@ -107,7 +107,7 @@ export default function Hero() {
           className="w-full h-16 sm:h-20 block"
           preserveAspectRatio="none"
         >
-          <path d="M0,40 C360,120 1080,-40 1440,40 L1440,120 L0,120 Z" fill="#18181b" />
+          <path d="M0,40 C360,120 1080,-40 1440,40 L1440,120 L0,120 Z" fill="#09090B" />
         </svg>
       </div>
     </section>
