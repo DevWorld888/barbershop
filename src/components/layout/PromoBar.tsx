@@ -7,7 +7,7 @@ export default function PromoBar() {
       <div className="mx-auto flex h-9 items-center justify-center gap-3 px-4 sm:h-10 sm:px-8">
         <div className="flex min-w-0 items-center justify-center gap-1.5 overflow-hidden whitespace-nowrap text-center text-[10px] sm:gap-2 sm:text-xs">
           <Image
-            src="/promo/col.ico"
+            src="/Promo/col.ico"
             alt="Bandera de Colombia"
             width={16}
             height={16}
