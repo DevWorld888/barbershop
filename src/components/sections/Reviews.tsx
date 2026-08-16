@@ -134,7 +134,7 @@ export default function Reviews() {
         {/* Google review CTA */}
         <div className="mt-14 text-center">
           <p className="text-zinc-500 text-sm mb-5">
-            Visited Diego&apos;s? Help other Hobart locals find their new barber.
+            Visited Mana Fade Studio? Help other Hobart locals find their new barber.
           </p>
           <a
             href={GOOGLE_REVIEW_URL}
