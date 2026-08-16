@@ -117,6 +117,23 @@ export default function LocationContact() {
                     @manafadestudio
                   </a>
                 </ContactItem>
+                <ContactItem
+                  label="Facebook"
+                  icon={
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                      <path d="M14 8h2V4h-2.5C10.9 4 10 5 10 7.2V10H8v4h2v6h4v-6h2.8l.5-4H14V8.4c0-.8.4-1.4 1.1-1.4H16V8h-2z" fill="currentColor"/>
+                    </svg>
+                  }
+                >
+                  <a
+                    href={businessInfo.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white text-sm hover:text-silver-500 transition-colors"
+                  >
+                    @manafadestudio-fb
+                  </a>
+                </ContactItem>
               </address>
 
               {/* Opening hours */}

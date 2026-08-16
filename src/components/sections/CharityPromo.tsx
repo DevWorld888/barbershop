@@ -97,7 +97,7 @@ export default function CharityPromo() {
                 Charity Weekend
               </p>
               <p className="text-white font-bold uppercase tracking-wide mt-3">
-                21 &amp; 23 August
+                21, 22 &amp; 23 August
               </p>
               <div className="mt-4 inline-flex items-center gap-2 border border-amber-400/40 text-amber-400 text-xs font-semibold uppercase tracking-wide px-4 py-2">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -151,9 +151,17 @@ export default function CharityPromo() {
                 <span className="text-white font-bold text-2xl">${RAISED_AUD.toLocaleString()}</span>{' '}
                 <span className="text-zinc-500 text-xs uppercase tracking-wide">AUD</span>
               </p> */}
-              <p className="text-amber-400 text-xs font-semibold uppercase tracking-wide">
-                Every haircut on 21 & 23 August helps support people affected by the earthquake in Colombia.
-              </p>
+              <div className="flex max-w-xs flex-col items-center gap-1 text-center sm:max-w-sm">
+                <p className="text-amber-400 text-[10px] font-black uppercase tracking-[0.2em] sm:text-xs sm:tracking-[0.28em]">
+                  COLOMBIA TE NECESITA
+                </p>
+                <p className="text-white/90 text-[10px] font-bold uppercase tracking-[0.18em] sm:text-xs sm:tracking-[0.24em]">
+                  COLOMBIA NEEDS US.
+                </p>
+                <p className="mt-1 text-amber-400 text-[10px] font-semibold uppercase tracking-wide leading-relaxed sm:text-xs">
+                  Every haircut on 21 &amp; 23 August helps support people affected by the earthquake in Colombia.
+                </p>
+              </div>
 
               <a
                 href={FRESHA_BOOKING_URL}

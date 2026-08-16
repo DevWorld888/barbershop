@@ -18,7 +18,8 @@ export const businessInfo = {
   address: 'Olinda Grove, Mount Nelson TAS 7007, Australia',
   phone: '+61 402 573 920',
   email: 'manafadestudio@gmail.com',
-  instagram: 'https://instagram.com/manafadestudio',
+  instagram: 'https://www.instagram.com/diegosbarberhobart?igsh=MTM4ZXJ4Y2NyeTc0dQ==',
+  facebook: 'https://www.facebook.com/share/1DqmmuotCJ/',
   googleMapsUrl: 'https://maps.google.com/?q=Mount+Nelson+Hobart+Tasmania+Australia',
   mapEmbedUrl:
     'https://maps.google.com/maps?q=Mount+Nelson+Hobart+Tasmania+Australia&t=&z=15&ie=UTF8&iwloc=B&output=embed',
@@ -155,7 +156,7 @@ export const services: Service[] = [
   },
   {
     title: 'Skinfade and Beard Combo',
-    duration: '30 min',
+    duration: '50 min',
     price: '$55',
     image: '/gallery/mens-beard-trim-fade-hobart.webp',
     imagePosition: 'center',
@@ -169,7 +170,7 @@ export const services: Service[] = [
   },
   {
     title: 'Buzz Cut and Beard Combo',
-    duration: '25 min',
+    duration: '40 min',
     price: '$38',
     image: '/services/buzzcut-beard.webp',
     imagePosition: 'center',
@@ -226,24 +227,17 @@ export const services: Service[] = [
   },
   {
     title: 'Kids Fade Haircut (Under Age Of 9)',
-    duration: '25 min',
+    duration: '30 min',
     price: '$38',
     image: '/services/kids-fade.webp',
     imagePosition: '50% 20%',
   },
   {
     title: 'Kids Regular Haircut (Under Age of 9)',
-    duration: '25 min',
+    duration: '30 min',
     price: '$35',
     image: '/services/kids-regular.webp',
     imagePosition: '50% 20%',
   },
-  {
-    title: 'Waxing (nose, ear, eyebrows, cheek) each',
-    duration: '5 min',
-    priceLabel: 'From',
-    price: '$5',
-    image: '/services/waxing.webp',
-    imagePosition: 'center',
-  },
+ 
 ]

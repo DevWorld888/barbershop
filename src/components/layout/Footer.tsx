@@ -94,6 +94,16 @@ export default function Footer() {
                     @manafadestudio
                   </a>
                 </li>
+                <li>
+                  <a
+                    href={businessInfo.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-zinc-400 text-sm hover:text-silver-500 transition-colors"
+                  >
+                    @manafadestudio-fb
+                  </a>
+                </li>
               </ul>
             </div>
 

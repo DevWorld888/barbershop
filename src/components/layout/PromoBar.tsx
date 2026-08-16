@@ -21,7 +21,7 @@ export default function PromoBar() {
             ❤
           </span>
           <span className="hidden shrink-0 uppercase tracking-wide text-zinc-300 sm:inline">
-            Charity Weekend &mdash; 21 &amp; 23 August
+            Charity Weekend &mdash; 21, 22  &amp; 23 August
           </span>
           <span className="hidden text-zinc-600 lg:inline" aria-hidden="true">
             |
