@@ -19,6 +19,7 @@ const nathanScript = localFont({
   variable: '--font-nathan-script',
 });
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.manafadebarbershop.com.au'),
   title: 'Mana Fade Studio | Premium Barber Shop in Mount Nelson Hobart Tasmania',
   description:
     "Premium barber shop in Mount Nelson, Hobart Tasmania specialising in fades, skin fades, beard trims and modern men's grooming. Book online today.",
@@ -39,12 +40,21 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_AU',
     siteName: 'Mana Fade Studio',
+    images: [
+      {
+        url: '/hero/premium-barber-hobart-tasmania-hobart.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Premium barber shop in Mount Nelson Hobart Tasmania',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Mana Fade Studio | Premium Barber Shop in Hobart Tasmania',
     description:
       "Premium barber shop in Mount Nelson, Hobart. Skin fades, beard trims and modern men's grooming.",
+    images: ['/hero/premium-barber-hobart-tasmania-hobart.webp'],
   },
 }
 
