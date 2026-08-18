@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { GoogleTagManager } from '@next/third-parties/google'
 // import { Geist, Cinzel } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
@@ -120,6 +121,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full bg-black text-white antialiased">{children}</body>
+      <GoogleTagManager gtmId="GTM-KQNFLR78" />
     </html>
   )
 }
