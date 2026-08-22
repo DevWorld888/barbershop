@@ -33,7 +33,7 @@ export default function BookingCTA() {
           </div>
 
           <p className="mt-10 text-black/40 text-xs uppercase tracking-widest">
-            Hobart CBD, Tasmania &middot; Book online 24/7
+            35-37 Olinda Grove, Mount Nelson TAS 7007 &middot; Book online 24/7
           </p>
 
         </div>

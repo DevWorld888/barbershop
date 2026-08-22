@@ -21,6 +21,9 @@ const nathanScript = localFont({
 });
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.manafadebarbershop.com.au'),
+  alternates: {
+    canonical: "/",
+  },
   title: 'Mana Fade Studio | Premium Barber Shop in Mount Nelson Hobart Tasmania',
   description:
     "Premium barber shop in Mount Nelson, Hobart Tasmania specialising in fades, skin fades, beard trims and modern men's grooming. Book online today.",
@@ -39,6 +42,7 @@ export const metadata: Metadata = {
     description:
       "Premium barber shop in Mount Nelson, Hobart Tasmania specialising in fades, skin fades, beard trims and modern men's grooming.",
     type: 'website',
+    url: "/",
     locale: 'en_AU',
     siteName: 'Mana Fade Studio',
     images: [
@@ -65,9 +69,12 @@ const localBusinessSchema = {
   name: 'Mana Fade Studio',
   description:
     "Premium barber shop in Mount Nelson, Hobart Tasmania specialising in skin fades, beard trims and modern men's grooming.",
+  url: 'https://www.manafadebarbershop.com.au',
+  image:
+  'https://www.manafadebarbershop.com.au/hero/premium-barber-hobart-tasmania-hobart.webp',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Olinda Grove',
+    streetAddress: '35-37 Olinda Grove',
     addressLocality: 'Mount Nelson',
     addressRegion: 'TAS',
     postalCode: '7007',
@@ -96,6 +103,10 @@ const localBusinessSchema = {
       closes: '22:00',
     },
   ],
+  sameAs: [
+  'https://www.instagram.com/diegosbarberhobart?igsh=MTM4ZXJ4Y2NyeTc0dQ==',
+  'https://www.facebook.com/share/1DqmmuotCJ/',
+],
   areaServed: [
     'Mount Nelson',
     'Sandy Bay',
