@@ -42,9 +42,9 @@ export default function ServiceCard({ service }: { service: Service }) {
         >
           <Image
             src={service.image}
-            alt={`${service.title} — Mana Fade Studio Hobart`}
+            alt={service.title}
             fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
             className="object-cover"
             style={{ objectPosition: service.imagePosition ?? 'center' }}
           />

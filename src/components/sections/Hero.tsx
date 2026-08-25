@@ -1,14 +1,14 @@
-﻿'use client'
+﻿"use client";
 
-import Image from 'next/image'
-import { motion, useReducedMotion } from 'framer-motion'
-import Button from '@/components/ui/Button'
-import BookingTrigger from '@/components/ui/BookingTrigger'
+import Image from "next/image";
+import { motion, useReducedMotion } from "framer-motion";
+import Button from "@/components/ui/Button";
+import BookingTrigger from "@/components/ui/BookingTrigger";
 
-const ease = [0.22, 1, 0.36, 1] as const
+const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function Hero() {
-  const shouldReduceMotion = useReducedMotion() === true
+  const shouldReduceMotion = useReducedMotion() === true;
 
   const fadeUp = (delay: number, y = 20) =>
     shouldReduceMotion
@@ -17,7 +17,7 @@ export default function Hero() {
           initial: { opacity: 0, y },
           animate: { opacity: 1, y: 0 },
           transition: { duration: 0.65, delay, ease },
-        }
+        };
 
   return (
     <section className="relative min-h-screen flex items-center bg-black overflow-hidden">
@@ -63,8 +63,8 @@ export default function Hero() {
           className="text-zinc-400 text-lg sm:text-xl max-w-xl mx-auto leading-relaxed mb-10"
           {...fadeUp(0.45, 16)}
         >
-          Sharp skin fades, beard trims and modern men&apos;s haircuts —
-          your local barber shop in Mount Nelson, Hobart.
+          Sharp skin fades, beard trims and modern men&apos;s haircuts — your
+          local barber shop in Mount Nelson, Hobart.
         </motion.p>
 
         <motion.div
@@ -72,7 +72,9 @@ export default function Hero() {
           {...fadeUp(0.6, 16)}
         >
           <BookingTrigger variant="primary">Book Now</BookingTrigger>
-          <Button href="#services" variant="outline">Our Services</Button>
+          <Button href="#services" variant="outline">
+            Our Services
+          </Button>
         </motion.div>
 
         <motion.div
@@ -100,16 +102,22 @@ export default function Hero() {
       </div>
 
       {/* Wave divider — fills with Services bg colour so the edge is curved */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden z-20" aria-hidden="true">
+      <div
+        className="absolute bottom-0 left-0 w-full overflow-hidden z-20"
+        aria-hidden="true"
+      >
         <svg
           viewBox="0 0 1440 80"
           xmlns="http://www.w3.org/2000/svg"
           className="w-full h-16 sm:h-20 block"
           preserveAspectRatio="none"
         >
-          <path d="M0,40 C360,120 1080,-40 1440,40 L1440,120 L0,120 Z" fill="#09090B" />
+          <path
+            d="M0,40 C360,120 1080,-40 1440,40 L1440,120 L0,120 Z"
+            fill="#09090B"
+          />
         </svg>
       </div>
     </section>
-  )
+  );
 }

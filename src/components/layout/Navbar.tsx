@@ -1,30 +1,31 @@
-﻿'use client'
+﻿"use client";
 
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import { motion, AnimatePresence, useReducedMotion } from 'framer-motion'
-import { FRESHA_BOOKING_URL } from '@/lib/data'
-import PromoBar from './PromoBar'
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { FRESHA_BOOKING_URL } from "@/lib/data";
+import PromoBar from "./PromoBar";
 
 const NAV_LINKS = [
-  { label: 'Services', href: '#services' },
-  { label: 'Gallery',  href: '#gallery' },
-  { label: 'Contact',  href: '#contact' },
-]
+  { label: "Services", href: "#services" },
+  { label: "Gallery", href: "#gallery" },
+  { label: "Contact", href: "#contact" },
+];
 
-const ease = [0.22, 1, 0.36, 1] as const
+const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-  const shouldReduceMotion = useReducedMotion() === true
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const shouldReduceMotion = useReducedMotion() === true;
 
   useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 24)
-    handler()
-    window.addEventListener('scroll', handler, { passive: true })
-    return () => window.removeEventListener('scroll', handler)
-  }, [])
+    const handler = () => setScrolled(window.scrollY > 24);
+    handler();
+    window.addEventListener("scroll", handler, { passive: true });
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
@@ -33,8 +34,8 @@ export default function Navbar() {
       <motion.header
         className={`transition-all duration-300 ease-in-out ${
           scrolled
-            ? 'bg-black/95 backdrop-blur-md border-b border-zinc-800/80'
-            : 'bg-transparent border-b border-transparent'
+            ? "bg-black/95 backdrop-blur-md border-b border-zinc-800/80"
+            : "bg-transparent border-b border-transparent"
         }`}
         initial={shouldReduceMotion ? false : { opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -50,10 +51,11 @@ export default function Navbar() {
             className="flex items-center shrink-0 group"
             aria-label="Mana Fade Studio — home"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src="/logo/logo1.png"
               alt="Mana Fade Studio"
+              width={1254}
+              height={1254}
               className="h-24 sm:h-16 md:h-24 w-auto object-contain select-none transition-[filter,opacity] duration-200 group-hover:brightness-110 group-hover:opacity-90"
               draggable={false}
             />
@@ -87,16 +89,32 @@ export default function Navbar() {
           <button
             className="md:hidden p-2 text-white hover:text-zinc-300 transition-colors duration-150"
             onClick={() => setIsOpen(!isOpen)}
-            aria-label={isOpen ? 'Close menu' : 'Open menu'}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
           >
             {isOpen ? (
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                aria-hidden="true"
+              >
                 <path d="M18 6L6 18M6 6l12 12" strokeLinecap="round" />
               </svg>
             ) : (
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                aria-hidden="true"
+              >
                 <path d="M3 8h18M3 16h18" strokeLinecap="round" />
               </svg>
             )}
@@ -110,7 +128,7 @@ export default function Navbar() {
               id="mobile-menu"
               className="md:hidden bg-black/95 backdrop-blur-md border-t border-zinc-800 overflow-hidden"
               initial={shouldReduceMotion ? false : { height: 0, opacity: 0 }}
-              animate={{ height: 'auto', opacity: 1 }}
+              animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.25, ease }}
             >
@@ -143,5 +161,5 @@ export default function Navbar() {
         </AnimatePresence>
       </motion.header>
     </div>
-  )
+  );
 }

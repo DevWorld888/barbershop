@@ -12,7 +12,7 @@ export default function PromoBar() {
             width={16}
             height={16}
             className="shrink-0"
-            priority
+            
           />
           <span className="shrink-0 font-semibold uppercase tracking-wide">
             Fades for Colombia

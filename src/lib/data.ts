@@ -141,15 +141,15 @@ export const services: Service[] = [
   {
     title: 'Fade Haircut',
     duration: '30 min',
-    priceLabel: 'From',
-    price: '$35',
+    // priceLabel: 'From',
+    price: '$40',
     image: '/gallery/skin-fade-barber-hobart.webp',
     imagePosition: '50% 35%',
   },
   {
     title: 'Men Regular Hair Cut',
     duration: '25 min',
-    priceLabel: 'Between',
+    // priceLabel: 'Between',
     price: '$35',
     image: '/gallery/haircut-barber-hobart.webp',
     imagePosition: '50% 20%',
@@ -221,7 +221,7 @@ export const services: Service[] = [
   {
     title: 'Senior Haircut',
     duration: '30 min',
-    price: '$25',
+    price: '$20',
     image: '/services/senior-haircut.webp',
     imagePosition: '50% 15%',
   },
