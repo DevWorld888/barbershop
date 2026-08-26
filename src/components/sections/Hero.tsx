@@ -24,9 +24,8 @@ export default function Hero() {
       {/* Background photo — not animated to preserve LCP */}
       <Image
         src="/hero/premium-barber-hobart-tasmania-hobart.webp"
-        alt="Premium barber shop skin fade haircut in Mount Nelson Hobart Tasmania"
+        alt="Barber tools and clippers at Mana Fade Studio in Hobart"
         fill
-        priority
         className="object-cover object-center opacity-40"
         sizes="100vw"
       />
@@ -35,15 +34,18 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/60" aria-hidden="true" />
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 sm:px-8 py-32 sm:py-40 w-full flex flex-col items-center text-center">
-        <motion.div className="mb-8" {...fadeUp(0, 20)}>
+        {/* <motion.div className="mb-8" {...fadeUp(0, 20)}> */}
+        <div className="mb-8">
           <Image
             src="/logo/logo1.png"
-            alt="Mana Home Base Studio barber logo"
+            alt="Mana Fade Studio"
             width={1254}
             height={1254}
             className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 object-contain"
+            priority
           />
-        </motion.div>
+        </div>
+        {/* </motion.div> */}
 
         <motion.p
           className="text-silver-500 text-xs font-medium uppercase tracking-[0.3em] mb-6"
