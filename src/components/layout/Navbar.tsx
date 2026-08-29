@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { FRESHA_BOOKING_URL } from "@/lib/data";
-import PromoBar from "./PromoBar";
+// import PromoBar from "./PromoBar";
 
 const NAV_LINKS = [
   { label: "Services", href: "#services" },
@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      <PromoBar />
+      {/* <PromoBar /> */}
 
       <motion.header
         className={`transition-all duration-300 ease-in-out ${
