@@ -16,16 +16,15 @@ const CATEGORIES: Category[] = ['All', 'Haircuts', 'Beard', 'Kids', 'Premium']
 const CATEGORY_MAP: Record<Exclude<Category, 'All'>, Set<string>> = {
   Haircuts: new Set([
     'Fade Haircut',
-    'Men Regular Hair Cut',
+    'Regular Hair Cut',
     'Buzz Cut',
     'Scissor Haircut',
-    'Restyling',
-    'Senior Haircut',
+    'Restyle / New Look',
+    'Pensioner Card Haircut',
   ]),
   Beard: new Set([
-    'Regular Beard Trim and Line Up',
+    'Beard Trim & Line Up',
     'Long Beard Trim',
-    'Wet Shave (Beard or Head)',
   ]),
   Kids: new Set([
     'Kids Fade Haircut (Under Age Of 9)',
@@ -42,11 +41,11 @@ const CATEGORY_MAP: Record<Exclude<Category, 'All'>, Set<string>> = {
 // Default 6 shown when "All" is selected and not expanded
 const FEATURED_TITLES = new Set([
   'Fade Haircut',
-  'Men Regular Hair Cut',
+  'Regular Hair Cut',
   'Skinfade and Beard Combo',
   'Regular Beard Trim and Line Up',
   'Kids Fade Haircut (Under Age Of 9)',
-  'Senior Haircut',
+  'Pensioner Card Haircut',
 ])
 
 const featuredServices = services.filter((s) => FEATURED_TITLES.has(s.title))

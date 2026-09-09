@@ -18,7 +18,7 @@ export const businessInfo = {
   address: '35-37 Olinda Grove, Mount Nelson TAS 7007',
   phone: '+61 402 573 920',
   email: 'manafadestudio@gmail.com',
-  instagram: 'https://www.instagram.com/diegosbarberhobart?igsh=MTM4ZXJ4Y2NyeTc0dQ==',
+  instagram: 'https://www.instagram.com/manahomebasestudio/',
   facebook: 'https://www.facebook.com/share/1DqmmuotCJ/',
   googleMapsUrl: 'https://maps.app.goo.gl/8QMhgkoTPSY4KeYRA',
   mapEmbedUrl:
@@ -31,9 +31,8 @@ export interface OpeningHour {
 }
 
 export const openingHours: OpeningHour[] = [
-  { days: 'Mon – Tue', hours: '8:00 AM – 10:00 PM' },
-  { days: 'Wed – Sat', hours: '5:50 PM – 10:00 PM' },
-  { days: 'Sunday',    hours: '3:50 PM – 10:00 PM' },
+  { days: 'Mon – Sat', hours: '7:00 PM – 11:00 PM' },
+  { days: 'Sunday',    hours: '3:00 PM – 11:00 PM' },
 ]
 
 // Replace these with real client testimonials before launch
@@ -156,11 +155,11 @@ export const services: Service[] = [
     imagePosition: '50% 35%',
   },
   {
-    title: 'Men Regular Hair Cut',
+    title: 'Regular Hair Cut',
     duration: '25 min',
     // priceLabel: 'Between',
     price: '$35',
-    image: '/gallery/haircut-barber-hobart.webp',
+    image: '/services/regularhaircut.webp',
     imagePosition: '50% 20%',
   },
   {
@@ -189,11 +188,11 @@ export const services: Service[] = [
     duration: '15 min',
     priceLabel: 'From',
     price: '$15',
-    image: '/services/buzzcut.webp',
+    image: '/services/buzcut.webp',
     imagePosition: '50% 15%',
   },
   {
-    title: 'Regular Beard Trim and Line Up',
+    title: 'Beard Trim & Line Up',
     duration: '30 min',
     price: '$25',
     image: '/services/beard-trim.webp',
@@ -215,14 +214,14 @@ export const services: Service[] = [
     imagePosition: '50% 25%',
   },
   {
-    title: 'Restyling',
+    title: 'Restyle / New Look',
     duration: '30 min',
     price: '$40',
     image: '/gallery/modern-curly-fade-haircut-hobart.webp',
     imagePosition: 'center',
   },
   {
-    title: 'Senior Haircut',
+    title: 'Pensioner Card Haircut',
     duration: '30 min',
     price: '$20',
     image: '/services/senior-haircut.webp',

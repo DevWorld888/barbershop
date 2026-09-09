@@ -86,25 +86,19 @@ const localBusinessSchema = {
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday'],
-      opens: '08:00',
-      closes: '22:00',
-    },
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      opens: '17:50',
-      closes: '22:00',
+      dayOfWeek: ['Monday', 'Tuesday','Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      opens: '19:50',
+      closes: '23:00',
     },
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Sunday'],
-      opens: '15:50',
-      closes: '22:00',
+      opens: '15:00',
+      closes: '23:00',
     },
   ],
   sameAs: [
-  'https://www.instagram.com/diegosbarberhobart?igsh=MTM4ZXJ4Y2NyeTc0dQ==',
+  'https://www.instagram.com/manahomebasestudio/',
   'https://www.facebook.com/share/1DqmmuotCJ/',
 ],
   areaServed: [
