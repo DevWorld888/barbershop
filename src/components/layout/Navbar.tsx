@@ -49,11 +49,11 @@ export default function Navbar() {
           <Link
             href="/"
             className="flex items-center shrink-0 group"
-            aria-label="Mana Fade Studio — home"
+            aria-label="Mana Fade Barber Studio — home"
           >
             <Image
               src="/logo/logo1.png"
-              alt="Mana Fade Studio"
+              alt="Mana Fade Barber Studio"
               width={1254}
               height={1254}
               className="h-24 sm:h-16 md:h-24 w-auto object-contain select-none transition-[filter,opacity] duration-200 group-hover:brightness-110 group-hover:opacity-90"

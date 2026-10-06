@@ -98,7 +98,7 @@ export default function WhyChooseUs() {
               Why Us
             </p>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-              Why Choose Mana Fade
+              Why Choose Mana Fade Barber Studio
             </h2>
             <div className="w-12 h-px bg-silver-500" aria-hidden="true" />
           </div>

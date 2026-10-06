@@ -69,7 +69,7 @@ export default function CharityPromo() {
               {/* Swap for a real Fades for Colombia event photo when available */}
               <Image
                 src="/mana-colombia-community-impact.webp"
-                alt="MANA Fade Studio community fundraiser supporting Colombia"
+                alt="Mana Fade Barber Studio community fundraiser supporting Colombia"
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
                 className="object-cover"
@@ -110,7 +110,7 @@ export default function CharityPromo() {
             <Reveal delay={0.15}>
               <div className="mt-8 border-t border-zinc-800/80 pt-6">
                 <p className="text-xs font-bold uppercase tracking-[0.3em] text-white">
-                  Mana Fade Studio
+                  Mana Fade Barber Studio
                 </p>
                 <p className="mt-1 text-sm text-zinc-500">More than a haircut.</p>
               </div>

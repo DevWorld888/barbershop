@@ -115,7 +115,7 @@ export default function Footer() {
       <div className="border-t border-zinc-800">
         <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-zinc-600 text-xs">
-            &copy; {new Date().getFullYear()} Mana Fade Studio. All rights reserved.
+            &copy; {new Date().getFullYear()} Mana Fade Barber Studio. All rights reserved.
           </p>
           <a
             href="https://www.iaugustodev.com/"

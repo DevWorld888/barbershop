@@ -29,7 +29,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         href={FRESHA_BOOKING_URL}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`Book ${service.title} at Mana Fade Studio Hobart`}
+        aria-label={`Book ${service.title} at Mana Fade Barber Studio Hobart`}
         className="absolute inset-0 z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-silver-500 focus-visible:outline-offset-[-2px]"
       />
 

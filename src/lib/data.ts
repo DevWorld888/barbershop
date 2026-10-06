@@ -7,7 +7,7 @@ export const BOOKING_URL = FRESHA_BOOKING_URL
 export const WHATSAPP_NUMBER = '61402573920'
 
 export const WHATSAPP_MESSAGE =
-  "Hi 👋 Thanks for contacting Mana Fade Studio.\n\n" +
+  "Hi 👋 Thanks for contacting Mana Fade Barber Studio.\n\n" +
   "For the fastest experience, please book your appointment online through our website using the 'Book Appointment' button.\n\n" +
   "If you have a question before booking, we'll be happy to help."
 
@@ -62,7 +62,7 @@ export const reviews: Review[] = [
     location: 'Hobart CBD',
     rating: 5,
     service: 'Skin Fade',
-    text: 'I’ve had a great experience at Mana Fade Studio. The barber is professional, friendly and really pays attention to detail. I’m always happy with my haircut and fade. If you’re looking for a good barber in Hobart, especially around Mount Nelson, I definitely recommend Mana Fade Studio. Great service, relaxed atmosphere and quality cuts. I will definitely be coming back!',
+    text: 'I’ve had a great experience at Mana Fade Barber Studio. The barber is professional, friendly and really pays attention to detail. I’m always happy with my haircut and fade. If you’re looking for a good barber in Hobart, especially around Mount Nelson, I definitely recommend Mana Fade Barber Studio. Great service, relaxed atmosphere and quality cuts. I will definitely be coming back!',
     date: 'september 2026',
   },
   {
@@ -121,7 +121,7 @@ export interface GalleryImage {
 export const galleryImages: GalleryImage[] = [
   {
     src: '/gallery/skin-fade-barber-hobart.webp',
-    alt: "Skin fade haircut at Mana Fade Studio Hobart",
+    alt: "Skin fade haircut at Mana Fade Barber Studio Hobart",
   },
   {
     src: '/gallery/haircut-barber-hobart.webp',
@@ -129,19 +129,19 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     src: '/gallery/haircut-lines-barber-hobart-.webp',
-    alt: "Haircut with lines at Mana Fade Studio Hobart",
+    alt: "Haircut with lines at Mana Fade Barber Studio Hobart",
   },
   {
     src: '/gallery/modern-curly-fade-haircut-hobart.webp',
-    alt: "Modern curly fade haircut at Mana Fade Studio Hobart",
+    alt: "Modern curly fade haircut at Mana Fade Barber Studio Hobart",
   },
   {
     src: '/gallery/mens-beard-trim-fade-hobart.webp',
-    alt: "Men's beard trim and fade at Mana Fade Studio Hobart",
+    alt: "Men's beard trim and fade at Mana Fade Barber Studio Hobart",
   },
   {
     src: '/gallery/curly-skin-fade-barber-hobart.webp',
-    alt: "Curly skin fade haircut at Mana Fade Studio Hobart",
+    alt: "Curly skin fade haircut at Mana Fade Barber Studio Hobart",
   },
 ]
 

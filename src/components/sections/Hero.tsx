@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Background photo — not animated to preserve LCP */}
       <Image
         src="/hero/premium-barber-hobart-tasmania-hobart.webp"
-        alt="Barber tools and clippers at Mana Fade Studio in Hobart"
+        alt="Barber tools and clippers at Mana Fade BarberStudio in Hobart"
         fill
         className="object-cover object-center opacity-40"
         sizes="100vw"
@@ -38,7 +38,7 @@ export default function Hero() {
         <div className="mb-8">
           <Image
             src="/logo/logo1.png"
-            alt="Mana Fade Studio"
+            alt="Mana Fade Barber Studio"
             width={1254}
             height={1254}
             className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 object-contain"

@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  title: 'Mana Fade Studio | Premium Barber Shop in Mount Nelson Hobart Tasmania',
+  title: 'Mana Fade Barber Studio | Premium Barber Shop in Mount Nelson Hobart Tasmania',
   description:
-    "Premium barber shop in Mount Nelson, Hobart Tasmania specialising in fades, skin fades, beard trims and modern men's grooming. Book online today.",
+    "Mana Fade Barber Studio in Mount Nelson, Hobart. Skin fades, tapers and beard trims, open late until 11pm. Near Sandy Bay & UTAS. Book online 24/7.",
   keywords: [
     'barber Hobart',
     'barber shop Hobart',
@@ -38,13 +38,13 @@ export const metadata: Metadata = {
     'Tasmania barber shop',
   ],
   openGraph: {
-    title: 'Mana Fade Studio | Premium Barber Shop in Mount Nelson Hobart Tasmania',
+    title: 'Mana Fade Barber Studio | Premium Barber Shop in Mount Nelson Hobart Tasmania',
     description:
-      "Premium barber shop in Mount Nelson, Hobart Tasmania specialising in fades, skin fades, beard trims and modern men's grooming.",
+      "Mana Fade Barber Studio in Mount Nelson, Hobart. Skin fades, tapers and beard trims, open late until 11pm. Near Sandy Bay & UTAS. Book online 24/7.",
     type: 'website',
     url: "/",
     locale: 'en_AU',
-    siteName: 'Mana Fade Studio',
+    siteName: 'Mana Fade Barber Studio',
     images: [
       {
         url: '/hero/premium-barber-hobart-tasmania-hobart.webp',
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mana Fade Studio | Premium Barber Shop in Hobart Tasmania',
+    title: 'Mana Fade Barber Studio | Premium Barber Shop in Hobart Tasmania',
     description:
-      "Premium barber shop in Mount Nelson, Hobart. Skin fades, beard trims and modern men's grooming.",
+      "Mana Fade Barber Studio in Mount Nelson, Hobart. Skin fades, tapers and beard trims, open late until 11pm. Near Sandy Bay & UTAS. Book online 24/7.",
     images: ['/hero/premium-barber-hobart-tasmania-hobart.webp'],
   },
 }
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'BarberShop',
-  name: 'Mana Fade Studio',
+  name: 'Mana Fade Barber Studio',
   description:
     "Premium barber shop in Mount Nelson, Hobart Tasmania specialising in skin fades, beard trims and modern men's grooming.",
   url: 'https://www.manafadebarbershop.com.au',
@@ -87,7 +87,7 @@ const localBusinessSchema = {
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday','Wednesday', 'Thursday', 'Friday', 'Saturday'],
-      opens: '19:50',
+      opens: '19:00',
       closes: '23:00',
     },
     {
@@ -108,6 +108,8 @@ const localBusinessSchema = {
     'South Hobart',
     'Kingston',
     'Hobart',
+    'Taroona',
+    'South Hobart',
     'Tasmania',
   ],
 }

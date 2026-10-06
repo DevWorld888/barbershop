@@ -171,7 +171,7 @@ export default function LocationContact() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Mana Fade Studio — Mount Nelson, Hobart, Tasmania"
+                title="Mana Fade Barber Studio — Mount Nelson, Hobart, Tasmania"
               />
             </div>
           </Reveal>
