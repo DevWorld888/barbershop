@@ -86,15 +86,27 @@ const localBusinessSchema = {
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday','Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      dayOfWeek: ['Monday', 'Tuesday'],
       opens: '19:00',
       closes: '23:00',
     },
     {
       '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Wednesday', 'Thursday', 'Friday'],
+      opens: '07:00',
+      closes: '21:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Saturday'],
+      opens: '18:30',
+      closes: '21:30',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Sunday'],
-      opens: '15:00',
-      closes: '23:00',
+      opens: '16:30',
+      closes: '21:00',
     },
   ],
   sameAs: [

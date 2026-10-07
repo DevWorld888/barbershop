@@ -31,8 +31,10 @@ export interface OpeningHour {
 }
 
 export const openingHours: OpeningHour[] = [
-  { days: 'Mon – Sat', hours: '7:00 PM – 11:00 PM' },
-  { days: 'Sunday',    hours: '3:00 PM – 11:00 PM' },
+  { days: 'Mon – Tue', hours: '19:00 – 23:00' },
+  { days: 'Wednesday – Friday', hours: '07:00 – 21:00' },
+  { days: 'Saturday', hours: '18:30 – 21:30' },
+  { days: 'Sunday', hours: '16:30 – 21:00' },
 ]
 
 // Replace these with real client testimonials before launch
@@ -158,7 +160,7 @@ export const services: Service[] = [
     title: 'Regular Hair Cut',
     duration: '25 min',
     // priceLabel: 'Between',
-    price: '$35',
+    price: '$38',
     image: '/services/regularhaircut.webp',
     imagePosition: '50% 20%',
   },
@@ -187,7 +189,7 @@ export const services: Service[] = [
     title: 'Buzz Cut',
     duration: '15 min',
     priceLabel: 'From',
-    price: '$15',
+    price: '$20',
     image: '/services/buzcut.webp',
     imagePosition: '50% 15%',
   },
@@ -221,9 +223,9 @@ export const services: Service[] = [
     imagePosition: 'center',
   },
   {
-    title: 'Pensioner Card Haircut',
+    title: 'Senior card or Pensioner Card Haircut',
     duration: '30 min',
-    price: '$20',
+    price: '$25',
     image: '/services/senior-haircut.webp',
     imagePosition: '50% 15%',
   },
@@ -237,7 +239,7 @@ export const services: Service[] = [
   {
     title: 'Kids Regular Haircut (Under Age of 9)',
     duration: '30 min',
-    price: '$30',
+    price: '$35',
     image: '/services/kids-regular.webp',
     imagePosition: '50% 20%',
   },
