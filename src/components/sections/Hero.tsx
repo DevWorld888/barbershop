@@ -24,7 +24,7 @@ export default function Hero() {
       {/* Background photo — not animated to preserve LCP */}
       <Image
         src="/hero/premium-barber-hobart-tasmania-hobart.webp"
-        alt="Barber tools and clippers at Mana Fade BarberStudio in Hobart"
+        alt="Barber tools and clippers at Mana Fade Barber Studio in Hobart"
         fill
         className="object-cover object-center opacity-40"
         sizes="100vw"
@@ -58,7 +58,7 @@ export default function Hero() {
           className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight mb-6 max-w-2xl"
           {...fadeUp(0.25, 28)}
         >
-          Private Barber Studio in Hobart Tasmania
+          Fade & Skin Fade Barber in Hobart – Open Late Nights & Weekends
         </motion.h1>
 
         <motion.p
