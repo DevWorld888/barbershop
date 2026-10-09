@@ -139,7 +139,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
       </head>
-      <body className="min-h-full bg-black text-white antialiased"><script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>{children}</body>
+      <body className="min-h-full bg-black text-white antialiased">{children}</body>
       <GoogleTagManager gtmId="GTM-KQNFLR78" />
     </html>
   )
