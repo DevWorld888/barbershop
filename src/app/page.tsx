@@ -10,6 +10,7 @@ import WhyChooseUs from '@/components/sections/WhyChooseUs'
 import Reviews from '@/components/sections/Reviews'
 import BookingCTA from '@/components/sections/BookingCTA'
 import LocationContact from '@/components/sections/LocationContact'
+import ServiceAreas from '@/components/sections/ServiceAreas'
 import WhatsAppButton from '@/components/ui/WhatsAppButton'
 import BookNowButton from '@/components/ui/BookNowButton'
 
@@ -26,6 +27,7 @@ export default function HomePage() {
         <WhyChooseUs />
         <Reviews />
         <BookingCTA />
+        <ServiceAreas />
         <LocationContact />
       </main>
       <Footer />

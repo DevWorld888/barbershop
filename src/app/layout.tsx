@@ -3,7 +3,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 // import { Geist, Cinzel } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
-import { BOOKING_URL, businessInfo } from '@/lib/data'
+import { BOOKING_URL, businessInfo, serviceAreas } from '@/lib/data'
 
 // const geist = Geist({
 //   variable: '--font-geist-sans',
@@ -126,16 +126,7 @@ const localBusinessSchema = {
     },
   ],
   sameAs: [businessInfo.instagram, businessInfo.facebook],
-  areaServed: [
-    'Mount Nelson',
-    'Sandy Bay',
-    'North Hobart',
-    'South Hobart',
-    'Kingston',
-    'Hobart',
-    'Taroona',
-    'Tasmania',
-  ],
+  areaServed: [...serviceAreas.map((area) => area.name), 'Hobart', 'Tasmania'],
 }
 
 export default function RootLayout({

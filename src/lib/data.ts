@@ -37,6 +37,50 @@ export const openingHours: OpeningHour[] = [
   { days: 'Sunday', hours: '16:30 – 21:00' },
 ]
 
+// Shared by the Service Areas section and the areaServed field in the JSON-LD schema
+export interface ServiceArea {
+  name: string
+  description: string
+}
+
+export const serviceAreas: ServiceArea[] = [
+  {
+    name: 'Mount Nelson',
+    description:
+      'Our studio is right here on Olinda Grove — your local barber for skin fades, tapers and beard trims in Mount Nelson.',
+  },
+  {
+    name: 'Sandy Bay',
+    description:
+      'A short drive up the hill from Sandy Bay and UTAS — easy to fit a fresh cut in after class or work.',
+  },
+  {
+    name: 'Hobart CBD',
+    description:
+      'Skip the city rush. Book online and head up to Mount Nelson for a sharp, unhurried haircut.',
+  },
+  {
+    name: 'South Hobart',
+    description:
+      'Close by for fades, regular cuts and beard work, with evening appointments that fit around your day.',
+  },
+  {
+    name: 'North Hobart',
+    description:
+      'Clients from North Hobart make the trip for detailed skin fades and clean beard line-ups.',
+  },
+  {
+    name: 'Taroona',
+    description:
+      'Just along the coast from Taroona — a local barber for precision skin fades, classic men’s haircuts and beard trims, minutes from home.',
+  },
+  {
+    name: 'Kingston',
+    description:
+      'An easy trip up the Southern Outlet for men’s haircuts, kids’ cuts and beard trims from Kingston.',
+  },
+]
+
 // Replace these with real client testimonials before launch
 export interface Review {
   id: string
