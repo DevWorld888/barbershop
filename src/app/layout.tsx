@@ -68,7 +68,8 @@ const SITE_URL = 'https://www.manafadebarbershop.com.au'
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'BarberShop',
+  // schema.org has no BarberShop type; HairSalon is the closest official one
+  '@type': 'HairSalon',
   '@id': `${SITE_URL}/#barbershop`,
   name: 'Mana Fade Barber Studio',
   description:
