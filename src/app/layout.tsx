@@ -3,6 +3,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 // import { Geist, Cinzel } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
+import { BOOKING_URL, businessInfo } from '@/lib/data'
 
 // const geist = Geist({
 //   variable: '--font-geist-sans',
@@ -63,15 +64,17 @@ export const metadata: Metadata = {
   },
 }
 
+const SITE_URL = 'https://www.manafadebarbershop.com.au'
+
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'BarberShop',
+  '@id': `${SITE_URL}/#barbershop`,
   name: 'Mana Fade Barber Studio',
   description:
     "Premium barber shop in Mount Nelson, Hobart Tasmania specialising in skin fades, beard trims and modern men's grooming.",
-  url: 'https://www.manafadebarbershop.com.au',
-  image:
-  'https://www.manafadebarbershop.com.au/hero/premium-barber-hobart-tasmania-hobart.webp',
+  url: SITE_URL,
+  image: `${SITE_URL}/hero/premium-barber-hobart-tasmania-hobart.webp`,
   address: {
     '@type': 'PostalAddress',
     streetAddress: '35-37 Olinda Grove',
@@ -80,9 +83,21 @@ const localBusinessSchema = {
     postalCode: '7007',
     addressCountry: 'AU',
   },
-  telephone: '+61402573920',
-  email: 'manafadestudio@gmail.com',
-  priceRange: '$$',
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: -42.9182007,
+    longitude: 147.3204625,
+  },
+  hasMap: businessInfo.googleMapsUrl,
+  telephone: businessInfo.phone,
+  email: businessInfo.email,
+  priceRange: '$20 – $55',
+  currenciesAccepted: 'AUD',
+  potentialAction: {
+    '@type': 'ReserveAction',
+    target: BOOKING_URL,
+  },
+  // Keep in sync with openingHours in src/lib/data.ts (shown on the page)
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
@@ -109,10 +124,7 @@ const localBusinessSchema = {
       closes: '21:00',
     },
   ],
-  sameAs: [
-  'https://www.instagram.com/manahomebasestudio/',
-  'https://www.facebook.com/share/1DqmmuotCJ/',
-],
+  sameAs: [businessInfo.instagram, businessInfo.facebook],
   areaServed: [
     'Mount Nelson',
     'Sandy Bay',
@@ -121,7 +133,6 @@ const localBusinessSchema = {
     'Kingston',
     'Hobart',
     'Taroona',
-    'South Hobart',
     'Tasmania',
   ],
 }
@@ -136,7 +147,7 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema).replace(/</g, '\\u003c') }}
         />
       </head>
       <body className="min-h-full bg-black text-white antialiased">{children}</body>
