@@ -135,7 +135,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en-AU" className={`${nathanScript.variable}`}>
+    <html lang="en-AU" className={`${nathanScript.variable} motion-safe:scroll-smooth`}>
       <head>
         <script
           type="application/ld+json"

@@ -1,11 +1,10 @@
 ﻿"use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, type ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { FRESHA_BOOKING_URL } from "@/lib/data";
-// import PromoBar from "./PromoBar";
 
 const NAV_LINKS = [
   { label: "Services", href: "#services" },
@@ -15,7 +14,12 @@ const NAV_LINKS = [
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
-export default function Navbar() {
+interface NavbarProps {
+  /** Optional bar rendered above the header, e.g. the active promotion. */
+  announcement?: ReactNode;
+}
+
+export default function Navbar({ announcement }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const shouldReduceMotion = useReducedMotion() === true;
@@ -29,7 +33,7 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      {/* <PromoBar /> */}
+      {announcement}
 
       <motion.header
         className={`transition-all duration-300 ease-in-out ${
