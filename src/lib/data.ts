@@ -234,7 +234,7 @@ export const services: Service[] = [
     duration: '15 min',
     priceLabel: 'From',
     price: '$20',
-    image: '/services/buzcut.webp',
+    image: '/services/buzcuthair.webp',
     imagePosition: '50% 15%',
   },
   {
@@ -270,7 +270,7 @@ export const services: Service[] = [
     title: 'Senior card or Pensioner Card Haircut',
     duration: '30 min',
     price: '$25',
-    image: '/services/senior-haircut.webp',
+    image: '/services/seniorHaircut.webp',
     imagePosition: '50% 15%',
   },
   {
@@ -284,7 +284,7 @@ export const services: Service[] = [
     title: 'Kids Regular Haircut (Under Age of 9)',
     duration: '30 min',
     price: '$35',
-    image: '/services/kids-regular.webp',
+    image: '/services/kids-regularcut.webp',
     imagePosition: '50% 20%',
   },
  

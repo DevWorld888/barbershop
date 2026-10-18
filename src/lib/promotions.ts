@@ -25,8 +25,8 @@ export const promotions: Promotion[] = [
     terms: 'Student offer only. Discount applied at appointment.',
     cta: { label: 'Book Now' },
     image: {
-      src: '/gallery/curly-skin-fade-barber-hobart.webp',
-      alt: 'Young man with a fresh curly-top skin fade at Mana Fade Barber Studio in Hobart',
+      src: '/services/kids-regularcut.webp',
+      alt: 'kid with a fresh curly-top skin fade at Mana Fade Barber Studio in Hobart',
       position: 'center 30%',
     },
     announcement: 'Back to School — $5 off for students',
