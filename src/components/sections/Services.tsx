@@ -20,7 +20,7 @@ const CATEGORY_MAP: Record<Exclude<Category, 'All'>, Set<string>> = {
     'Buzz Cut',
     'Scissor Haircut',
     'Restyle / New Look',
-    'Pensioner Card Haircut',
+    'Senior card or Pensioner Card Haircut',
   ]),
   Beard: new Set([
     'Beard Trim & Line Up',
@@ -45,7 +45,7 @@ const FEATURED_TITLES = new Set([
   'Skinfade and Beard Combo',
   'Regular Beard Trim and Line Up',
   'Kids Fade Haircut (Under Age Of 9)',
-  'Pensioner Card Haircut',
+  'Senior card or Pensioner Card Haircut',
 ])
 
 const featuredServices = services.filter((s) => FEATURED_TITLES.has(s.title))
