@@ -3,10 +3,10 @@ import Reveal from '@/components/animations/Reveal'
 import { businessInfo, FRESHA_BOOKING_URL } from '@/lib/data'
 
 const quickLinks = [
-  { label: 'Services', href: '#services' },
-  { label: 'Gallery',  href: '#gallery' },
-  { label: 'Reviews',  href: '#reviews' },
-  { label: 'Contact',  href: '#contact' },
+  { label: 'Services', href: '/#services' },
+  { label: 'Gallery',  href: '/#gallery' },
+  { label: 'Reviews',  href: '/#reviews' },
+  { label: 'Contact',  href: '/#contact' },
 ]
 
 export default function Footer() {

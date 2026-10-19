@@ -1,6 +1,8 @@
 import Reveal from '@/components/animations/Reveal'
 import BookingTrigger from '@/components/ui/BookingTrigger'
+import Link from 'next/link'
 import { businessInfo, serviceAreas } from '@/lib/data'
+import { getSuburbPageByName } from '@/lib/suburbs'
 
 export default function ServiceAreas() {
   return (
@@ -30,7 +32,9 @@ export default function ServiceAreas() {
 
         {/* Suburb grid */}
         <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {serviceAreas.map((area, i) => (
+          {serviceAreas.map((area, i) => {
+            const areaPage = getSuburbPageByName(area.name)
+            return (
             <li key={area.name}>
               <Reveal delay={i * 0.06} className="h-full">
                 <article className="h-full border border-zinc-800 bg-zinc-900/40 p-7 transition-colors hover:border-silver-700">
@@ -46,10 +50,19 @@ export default function ServiceAreas() {
                   <p className="text-zinc-400 text-sm leading-relaxed">
                     {area.description}
                   </p>
+                  {areaPage && (
+                    <Link
+                      href={`/barber/${areaPage.slug}`}
+                      className="mt-4 inline-block text-silver-500 text-xs uppercase tracking-widest hover:text-silver-400 transition-colors"
+                    >
+                      Barber in {area.name} &rarr;
+                    </Link>
+                  )}
                 </article>
               </Reveal>
             </li>
-          ))}
+            )
+          })}
         </ul>
 
         {/* CTA */}

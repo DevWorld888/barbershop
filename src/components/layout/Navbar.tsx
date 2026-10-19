@@ -7,9 +7,9 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { FRESHA_BOOKING_URL } from "@/lib/data";
 
 const NAV_LINKS = [
-  { label: "Services", href: "#services" },
-  { label: "Gallery", href: "#gallery" },
-  { label: "Contact", href: "#contact" },
+  { label: "Services", href: "/#services" },
+  { label: "Gallery", href: "/#gallery" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const ease = [0.22, 1, 0.36, 1] as const;
